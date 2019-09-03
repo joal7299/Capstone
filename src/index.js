@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
-import Home from './Home';
-import Parent from './Parent';
-import Roommate from './Roommate';
-import Driver from './Driver';
+import Home from './components/Home';
+import Parent from './components/Parent';
+import Roommate from './components/Roommate';
+import Driver from './components/Driver';
 
 
 // import * as serviceWorker from './serviceWorker';
