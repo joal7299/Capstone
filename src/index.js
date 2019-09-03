@@ -31,15 +31,10 @@ const routing = (
                 </li>
             </ul>
             <Route exact path="/" component={App}/>
-            //app will be where the initial story goes down
             <Route path="/home" component={Home}/>
-            //home sets the scene for the funeral
             <Route path="/parent" component={Parent}/>
-            //option 1: talk to parent
             <Route path="/roommate" component={Roommate}/>
-            //option 1: talk to parent
             <Route path="/driver" component={Driver}/>
-            //option 1: talk to parent
         </div>
     </Router>
 )
