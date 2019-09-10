@@ -47,7 +47,7 @@ class App extends React.Component {
         />
             <Button>hello</Button>
             {this.state.complete == &
-                <Redirect to="/Home.js"/>true
+                <Redirect to="/Home.js"/>
             }
             {/*<Lottie options={defaultOptions} height={400} width={400} />*/}
         </div>
