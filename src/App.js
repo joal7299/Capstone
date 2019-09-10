@@ -46,7 +46,7 @@ class App extends React.Component {
             <Typed style={{fontSize: "3em", textAlign: "center"}} strings={['your name is Stephanie Walker', 'you are 22 years old','on September 5th, 2019, you were driving home', 'and from what seemed to be out of nowhere', 'you were hit and killed in a severe car accident', 'life would never be the same.', 'welcome to your funeral']} typeSpeed={35} backSpeed={50} onComplete={function(){this.setState({complete:true})}}
         />
             <Button>hello</Button>
-            {this.state.complete == &
+            this.state.complete == && {
                 <Redirect to="/Home.js"/>
             }
             {/*<Lottie options={defaultOptions} height={400} width={400} />*/}
