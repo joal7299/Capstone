@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a02dbb-e842-4117-b2e3-a195cc1dbbdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/funeral.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/home.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/textBubble.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/FuneralSceneFinished.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/TextBubbleLeft.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rain.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lotties/rain.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lotties/lottie.js" beforeDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Artboard 1-50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Artboard 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Artboard 1.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textBubble.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/textBubble.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/textBubble.svg" afterDir="false" />
->>>>>>> sophie
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +35,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="C:\Users\soph\Desktop\capstone\cap-test\src\lotties" />
-=======
       <recent name="C:\Users\soph\Desktop\capstone\cap-test\src\img" />
->>>>>>> sophie
       <recent name="C:\Users\soph\Desktop\capstone\cap-test\src" />
       <recent name="C:\Users\soph\Desktop\capstone\cap-test\src\components" />
     </key>

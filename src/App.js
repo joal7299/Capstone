@@ -19,7 +19,6 @@ class App extends React.Component {
             {this.state.complete == true &&
                 <Redirect to="/home"/>
             }
-            {/*<Lottie options={defaultOptions} height={400} width={400} />*/}
         </div>
   )
   }

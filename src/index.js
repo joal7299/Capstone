@@ -8,28 +8,9 @@ import Parent from './components/Parent';
 import Roommate from './components/Roommate';
 import Driver from './components/Driver';
 
-
-// import * as serviceWorker from './serviceWorker';
 const routing = (
     <Router>
         <div>
-            {/*<ul>*/}
-            {/*    <li>*/}
-            {/*        <Link to="/">Root</Link>*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*        <Link to="/home">Home</Link>*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*        <Link to="/parent">Parent</Link>*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*        <Link to="/roommate">Roommate</Link>*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*        <Link to="/driver">Driver</Link>*/}
-            {/*    </li>*/}
-            {/*</ul>*/}
             <Route exact path="/" component={App}/>
             <Route path="/home" component={Home}/>
             <Route path="/parent" component={Parent}/>
