@@ -1,0 +1,22 @@
+.typedIntro {
+    font-size: 3em;
+    text-align: center;
+}
+.confine {
+    position: relative;
+    height: 100%;
+}
+.textBubbleHome {
+    z-index: 1;
+    position: absolute;
+    width: 20%;;
+    transform: translate(350%,200%);
+    position: absolute;
+}
+
+.textHome {
+    z-index: 1;
+    font-size: 1vw;
+    position: absolute;
+    transform: translate(1450%,1200%);
+}

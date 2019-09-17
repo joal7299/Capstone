@@ -6,9 +6,12 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Funeral>
-                    <img style={{zIndex: 1}} src={Text}/>
-                </Funeral>
+                <div className="confine">
+                <img className="textBubbleHome" src={Text}/>
+                <p className="textHome">I am sophie
+                </p>
+                </div>
+                <Funeral />
             </div>
         )
     }
