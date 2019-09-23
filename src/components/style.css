@@ -7,7 +7,7 @@
     height: 100%;
 }
 .textBubbleHome {
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     width: 20%;
     transform: translate(370%,180%);
@@ -15,21 +15,28 @@
 }
 
 .textHome {
-    z-index: 1;
+    z-index: 10;
     font-size: 1vw;
     position: absolute;
     transform: translate(1550%,1200%);
 }
 
 .gravestone {
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     transform: translate(300%,140%);
     width: 14%;
 }
 
-.grey1 {
+.funeral {
     z-index: 1;
+    position: absolute;
+    /*transform: translate(300%,140%);*/
+    /*width: 14%;*/
+}
+
+.grey1 {
+    z-index: 10;
     position: absolute;
     transform: translate(50%,50%);
     width: 10%;

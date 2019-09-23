@@ -26,12 +26,18 @@ class Home extends React.Component {
             <div>
                 <div className="confine">
                     <img className="textBubbleHome" src={Text}/>
-                    <p className="textHome">I am 5
+                    <p className="textHome">
                     </p>
                 </div>
-                <Person1 className="grey1"/>
-                <Gravestone className="gravestone"/>
-                <Funeral />
+                <div>
+                    <Person1 className="grey1"/>
+                </div>
+                <div>
+                    <Gravestone className="gravestone"/>
+                </div>
+                <div>
+                    <Funeral className="funeral"/>
+                </div>
             </div>
         )
     }

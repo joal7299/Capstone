@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.67 430.92"><defs><style>.cls-1{fill:#4d4d4d;}.cls-2{fill:#333;}</style></defs><title>gravestone</title><g id="Layer_2" data-name="Layer 2"><g id="gravestone"><path class="cls-1" d="M23.39,112.46c1.93-71.41,64.72-124.7,131.13-110,55.6,12.29,104.58,40,121.71,96.5l15.44,287.57L17.36,430.92Z"/><polygon class="cls-2" points="0 405.3 17.36 430.92 23.39 112.46 0 405.3"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="291.7px" height="430.9px" viewBox="0 0 291.7 430.9" xml:space="preserve">
+<title>gravestone</title>
+<g id="Layer_2_1_">
+	<g id="gravestone">
+		<path d="M23.4,112.5C25.3,41,88.1-12.2,154.5,2.5c55.6,12.3,104.6,40,121.7,96.5l15.4,287.6L17.4,430.9L23.4,112.5z"/>
+		<polygon fill="#333333" points="0,405.3 17.4,430.9 23.4,112.5 		"/>
+	</g>
+</g>
+</svg>
