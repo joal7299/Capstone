@@ -14,39 +14,153 @@
 .confine {
     position: relative;
 }
+
 .textBubbleGrey1 {
-    z-index: 10;
-    transform: translate(60%,160%);
+    z-index: 20;
+    transform: translate(90%,160%);
     width: 20%;
     position: absolute;
 }
 
 .textHomeGrey1 {
-    z-index: 10;
+    z-index: 20;
     font-size: 1.4vw;
     position: absolute;
-    transform: translate(550%,750%);
+    transform: translate(690%,750%);
+}
+
+.textBubbleGrey2 {
+    z-index: 20;
+    transform: translate(145%,110%);
+    width: 20%;
+    position: absolute;
+}
+
+.textHomeGrey2 {
+    z-index: 20;
+    font-size: 1.4vw;
+    position: absolute;
+    transform: translate(1060%,520%);
+}
+
+.textBubbleGrey3 {
+    z-index: 20;
+    transform: translate(215%,110%);
+    width: 20%;
+    position: absolute;
+}
+
+.textHomeGrey3 {
+    z-index: 20;
+    font-size: 1.4vw;
+    position: absolute;
+    transform: translate(1520%,520%);
+}
+
+.textBubbleGrey4 {
+    z-index: 20;
+    transform: translate(285%,100%);
+    width: 20%;
+    position: absolute;
+}
+
+.textHomeGrey4 {
+    z-index: 20;
+    font-size: 1.4vw;
+    position: absolute;
+    transform: translate(1990%,470%);
+}
+
+.textBubbleGrey5 {
+    z-index: 20;
+    transform: translate(355%,100%);
+    width: 20%;
+    position: absolute;
+}
+
+.textHomeGrey5 {
+    z-index: 20;
+    font-size: 1.4vw;
+    position: absolute;
+    transform: translate(2440%,470%);
 }
 
 .gravestone {
-    z-index: 3;
+    z-index: 15;
     position: absolute;
-    transform: translate(300%,100%);
-    width: 14%;
+    transform: translate(220%,80%);
+    width: 18%;
     /*height: 1vh;*/
 }
 
 .grey1 {
     z-index: 10;
     position: absolute;
-    transform: translate(20%,45%);
-    width: 10%;
+    transform: translate(72%,55%);
+    width: 10.5%;
 }
 
 .person1 {
     z-index: 10;
     position: absolute;
-    transform: translate(20%,45%);
+    transform: translate(72%,55%);
+    width: 10.5%;
+}
+
+.grey2 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(220%,30%);
+    width: 9%;
+}
+
+.person2 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(220%,30%);
+    width: 9%;
+}
+
+.grey3 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(335%,35%);
     width: 10%;
 }
+
+.person3 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(335%,35%);
+    width: 10%;
+}
+
+.grey4 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(475%,40%);
+    width: 10%;
+}
+
+.person4 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(475%,40%);
+    width: 10%;
+}
+
+.grey5 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(630%,50%);
+    width: 10%;
+}
+
+.person5 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(630%,50%);
+    width: 10%;
+}
+
 
