@@ -2,49 +2,51 @@
     margin:0;
     padding: 0;
 }
+
 .typedIntro {
     font-size: 3em;
     text-align: center;
 }
+
+/*.container {*/
+/*    position: relative;*/
+/*}*/
 .confine {
     position: relative;
 }
-.textBubbleHome {
+.textBubbleGrey1 {
     z-index: 10;
-    /*transform: translate(370%,700%);*/
+    transform: translate(60%,160%);
     width: 20%;
     position: absolute;
 }
 
-.textHome {
+.textHomeGrey1 {
     z-index: 10;
-    font-size: 1vw;
+    font-size: 1.4vw;
     position: absolute;
-    /*transform: translate(1550%,1200%);*/
+    transform: translate(550%,750%);
 }
 
 .gravestone {
     z-index: 3;
     position: absolute;
-    transform: translate(300%,90%);
+    transform: translate(300%,100%);
     width: 14%;
     /*height: 1vh;*/
-}
-
-.funeral {
-    z-index: 1;
-    position: absolute;
-    /*width: 110%;*/
-    /*transform: translate(300%,140%);*/
-    /*width: 100%;*/
-    /*height: 100vh;*/
-    /*width: 300vw;*/
-
 }
 
 .grey1 {
     z-index: 10;
     position: absolute;
-    transform: translate(50%,50%);
+    transform: translate(20%,45%);
     width: 10%;
 }
+
+.person1 {
+    z-index: 10;
+    position: absolute;
+    transform: translate(20%,45%);
+    width: 10%;
+}
+

@@ -5,6 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/background.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/gravestone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/gravestone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/grey1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/grey1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/person1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/person1.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +81,7 @@
       <updated>1566944003799</updated>
       <workItem from="1566944007889" duration="3941000" />
       <workItem from="1567537636885" duration="1090000" />
-      <workItem from="1569269346984" duration="5859000" />
+      <workItem from="1569269346984" duration="11492000" />
     </task>
     <servers />
   </component>
