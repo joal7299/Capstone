@@ -29,15 +29,9 @@ class Home extends React.Component {
                     <p className="textHome">
                     </p>
                 </div>
-                <div>
                     <Person1 className="grey1"/>
-                </div>
-                <div>
                     <Gravestone className="gravestone"/>
-                </div>
-                <div>
                     <Funeral className="funeral"/>
-                </div>
             </div>
         )
     }
