@@ -35,18 +35,7 @@ class Hover extends React.Component {
         return (
             <div className="container">
                 <div onMouseEnter={ ()=> this.setState({hover: true}) } onMouseLeave={ ()=> this.setState({hover: false}) }>
-                    {this.state.hover ? this.props.hoverSvg && this.props.textBox && this.props.texts : this.props.noHoverSvg}
-                        {/*<div className="confine">*/}
-                        {/*    {normalPerson}*/}
-                        {/*    /!*<img className="textBubbleGrey1" src={Text}/>*!/*/}
-                        {/*    /!*<p className="textHomeGrey1">*!/*/}
-                        {/*    /!*    I miss my sister. I don’t<br></br> know what I’ll do without<br></br> her; I’ve never had to try.*!/*/}
-                        {/*    /!*</p>*!/*/}
-                        {/*    /!*<Person1 className="person1"/>*!/*/}
-                        {/*</div> :*/}
-                        {/*<div>{this.props.noHover} className={greyPersonClass}*/}
-                        {/*</div>*/}
-                    }
+                    {this.state.hover ? <div>{this.props.hoverSvg}<div className="confine">{this.props.textBox}{this.props.texts}</div></div> : this.props.noHoverSvg}
                 </div>
             </div>
         )}
