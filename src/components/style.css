@@ -40,7 +40,7 @@
     z-index: 20;
     font-size: 1.4vw;
     position: absolute;
-    transform: translate(1060%,520%);
+    transform: translate(175%,180%);
 }
 
 .textBubbleGrey3 {
@@ -68,7 +68,7 @@
     z-index: 20;
     font-size: 1.4vw;
     position: absolute;
-    transform: translate(1990%,470%);
+    transform: translate(385%,170%);
 }
 
 .textBubbleGrey5 {
