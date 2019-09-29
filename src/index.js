@@ -22,7 +22,6 @@ const routing = (
             <Route path="/boyfriend" component={Boyfriend}/>
             <Route path="/driver" component={Driver}/>
         </div>
-
     </Router>
 )
 ReactDOM.render(routing, document.getElementById('root'));
