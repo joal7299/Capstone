@@ -68,7 +68,7 @@
     z-index: 20;
     font-size: 1.4vw;
     position: absolute;
-    transform: translate(385%,170%);
+    transform: translate(370%,165%);
 }
 
 .textBubbleGrey5 {
@@ -82,7 +82,7 @@
     z-index: 20;
     font-size: 1.4vw;
     position: absolute;
-    transform: translate(460%,160%);
+    transform: translate(475%,160%);
 }
 
 .gravestone {
