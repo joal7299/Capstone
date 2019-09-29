@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Roommate extends React.Component {
+class Friend extends React.Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ class Roommate extends React.Component {
     }
 }
 
-export default Roommate;
+export default Friend;
