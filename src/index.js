@@ -11,10 +11,6 @@ import Boyfriend from './components/Boyfriend';
 import Sister from './components/Sister';
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> sophietesthover
 const routing = (
     <Router>
         <div>
