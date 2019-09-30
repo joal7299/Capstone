@@ -6,6 +6,11 @@
 .typedIntro {
     font-size: 3em;
     text-align: center;
+    transform:translate(20%, 500%);
+}
+
+.typed {
+    transform:translate(0%, 200%);
 }
 
 /*.container {*/
