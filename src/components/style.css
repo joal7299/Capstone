@@ -205,4 +205,14 @@
     text-align: center;
 }
 
+.key {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* width: 50%;
+    transform: translate(10%, 70%);
+    text-align: center; */
+}
+
 
