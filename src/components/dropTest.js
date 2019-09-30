@@ -30,7 +30,7 @@ class Piece1 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece1"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P1} alt="piece1">
@@ -58,7 +58,7 @@ class Piece2 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece2"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P2} alt="piece1">
@@ -86,7 +86,7 @@ class Piece3 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece3"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P3} alt="piece1">
@@ -114,7 +114,7 @@ class Piece4 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece4"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P4} alt="piece1">
@@ -142,7 +142,7 @@ class Piece5 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece5"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P5} alt="piece1">
@@ -170,7 +170,7 @@ class Piece6 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece6"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P6} alt="piece1">
@@ -198,7 +198,7 @@ class Piece7 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece7"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P7} alt="piece1">
@@ -226,7 +226,7 @@ class Piece8 extends React.Component {
       //   style={{ position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px', background: 'red', width: '100px', height: '100px'}}>
       // </div>
       <div> 
-        <img
+        <img className="piece8"
           onMouseDown={() => this.setDragging(this)} 
           style={{position: 'absolute', left: this.state.x + 'px', top: this.state.y + 'px'}}
           src={P8} alt="piece1">
@@ -256,14 +256,14 @@ class DragParent extends React.Component {
     const onUp = () => this.setState({ isDragging: false, dragTarget: null });
     return (
       <div style={{ position: 'relative', width: '100vw', height: '100vh' }} onMouseMove={onMove} onMouseUp={onUp}>
-        <Piece1 startX={10} startY={10} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
-        <Piece2 startX={20} startY={20} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
-        <Piece3 startX={30} startY={30} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
-        <Piece4 startX={40} startY={40} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
-        <Piece5 startX={50} startY={50} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
-        <Piece6 startX={60} startY={60} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
-        <Piece7 startX={70} startY={70} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
-        <Piece8 startX={80} startY={80} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece1 startX={10} startY={390} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece2 startX={220} startY={120} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece3 startX={300} startY={390} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece4 startX={450} startY={420} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece5 startX={590} startY={510} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece6 startX={600} startY={60} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece7 startX={720} startY={270} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
+        <Piece8 startX={810} startY={320} setDragging={(target) => this.setState({ isDragging: true, dragTarget: target })} />
       </div>
     )
   }

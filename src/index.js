@@ -9,6 +9,10 @@ import Friend from './components/Friend';
 import Driver from './components/Driver';
 import Boyfriend from './components/Boyfriend';
 import Sister from './components/Sister';
+import Bed from './components/Bed';
+import Desk from './components/Desk';
+import Trash from './components/Trash';
+import Note from './components/Note';
 
 
 const routing = (
@@ -21,6 +25,10 @@ const routing = (
             <Route path="/friend" component={Friend}/>
             <Route path="/boyfriend" component={Boyfriend}/>
             <Route path="/driver" component={Driver}/>
+            <Route path="/bed" component={Bed}/>
+            <Route path="/desk" component={Desk}/>
+            <Route path="/trash" component={Trash}/>
+            <Route path="/note" component={Note}/>
         </div>
     </Router>
 )
