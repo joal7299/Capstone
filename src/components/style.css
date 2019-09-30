@@ -215,4 +215,37 @@
     text-align: center; */
 }
 
+.Desk {
+    transform: translate(220%,120%);
+    width: 32%;
+    position: absolute;
+}
+
+.Trash {
+    transform: translate(600%,300%);
+    width: 10%;
+    position: absolute;
+}
+
+.Bed {
+    transform: translate(0%,80%);
+    width: 50%;
+    position: absolute;
+}
+
+.Home {
+    transform: translate(2%,2%);
+    width: 5%;
+    position: absolute;
+}
+
+.Back {
+    z-index: 1;
+    transform: translate(2%,2%);
+    width: 5%;
+    position: absolute;
+}
+
+
+
 
