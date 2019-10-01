@@ -16,10 +16,10 @@ class Parent extends React.Component {
     render() {
         return (
             <div>
-                <Hover noHoverSvg={<Bed className="Bed"/>} hoverSvg={<Bed onClick={()=> window.location.href="Bed"} className="Bed"/>}/>
-                <Hover noHoverSvg={<Desk className="Desk"/>} hoverSvg={<Desk onClick={()=> window.location.href="Desk"} className="Desk"/>}/>
-                <Hover noHoverSvg={<Trash className="Trash"/>} hoverSvg={<Trash onClick={()=> window.location.href="Trash"} className="Trash"/>}/>
-                <Hover noHoverSvg={<Home className="Home"/>} hoverSvg={<Home onClick={()=> window.location.href="Home"} className="Home"/>}/>
+                <Hover noHoverSvg={<Bed className="Bed"/>} hoverSvg={<Bed cursor="pointer" onClick={()=> window.location.href="Bed"} className="Bed"/>}/>
+                <Hover noHoverSvg={<Desk className="Desk"/>} hoverSvg={<Desk cursor="pointer" onClick={()=> window.location.href="Desk"} className="Desk"/>}/>
+                <Hover noHoverSvg={<Trash className="Trash"/>} hoverSvg={<Trash cursor="pointer" onClick={()=> window.location.href="Trash"} className="Trash"/>}/>
+                <Hover noHoverSvg={<Home className="Home"/>} hoverSvg={<Home cursor="pointer" onClick={()=> window.location.href="Home"} className="Home"/>}/>
                 {/* <Room /> */}
                 
                 
