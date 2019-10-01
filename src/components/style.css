@@ -246,6 +246,33 @@
     position: absolute;
 }
 
+.password1 {
+    transform: translate(-150%,3000%);
+    /* width: 5%; */
+    position: absolute;
+}
+.password2 {
+    transform: translate(-50%,3000%);
+    /* width: 5%; */
+    position: absolute;
+}
+.password3 {
+    transform: translate(50%,3000%);
+    /* width: 5%; */
+    position: absolute;
+}
+
+.note{
+    transform: translate(50%,10%);
+    width: 50%;
+    position: absolute;
+}
+
+.noteInstructions{
+    transform: translate(75%,30%);
+    width: 50%;
+    position: absolute;
+}
 
 
 

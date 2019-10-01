@@ -7,8 +7,7 @@ class Note extends React.Component {
     render() {
         return (
             <div>
-                <h1>Note</h1>
-                <Stephnote />
+                <Stephnote className="note"/>
                 <Hover noHoverSvg={<Room className="Home"/>} hoverSvg={<Room onClick={()=> window.location.href="Parent"} className="Home"/>}/>
             </div>
         )
