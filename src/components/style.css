@@ -165,34 +165,42 @@
 
 .piece1 {
     width: 10%;
+    user-select: none;
 }
 
 .piece2 {
     width: 12%;
+    user-select: none;
 }
 
 .piece3 {
     width: 14%;
+    user-select: none;
 }
 
 .piece4 {
     width: 7%;
+    user-select: none;
 }
 
 .piece5 {
     width: 11%;
+    user-select: none;
 }
 
 .piece6 {
     width: 13%;
+    user-select: none;
 }
 
 .piece7 {
-    width: 10%;
+    width: 15%;
+    user-select: none;
 }
 
 .piece8 {
     width: 15%;
+    user-select: none;
 }
 
 .Back {
