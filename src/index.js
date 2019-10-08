@@ -13,6 +13,7 @@ import Bed from './components/Bed';
 import Desk from './components/Desk';
 import Trash from './components/Trash';
 import Note from './components/Note';
+import Music from './components/musicGame';
 
 
 const routing = (
@@ -29,6 +30,7 @@ const routing = (
             <Route path="/desk" component={Desk}/>
             <Route path="/trash" component={Trash}/>
             <Route path="/note" component={Note}/>
+            <Route path="/musicGame" component={Music}/>
         </div>
     </Router>
 )
