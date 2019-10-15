@@ -13,6 +13,7 @@ class Friend extends React.Component {
 
     song = ()=> {
         this.setState({play:true});
+        this.audio.playbackRate = 0.5;
         this.audio.play();
     }
     render() {
