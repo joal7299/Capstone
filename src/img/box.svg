@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.66 159.47"><defs><style>.cls-1{fill:#ad8e0c;}.cls-2{fill:#9b7e08;}.cls-3{fill:#666252;}.cls-4{fill:none;stroke:#9e9b8d;stroke-miterlimit:10;stroke-width:7px;}</style></defs><title>box</title><g id="Layer_2" data-name="Layer 2"><g id="box"><path class="cls-1" d="M239.25,157.36,11.4,159.47A11.43,11.43,0,0,1,0,148.07V59.46a11.43,11.43,0,0,1,11.4-11.4L239.25,46a11.44,11.44,0,0,1,11.41,11.4V146A11.44,11.44,0,0,1,239.25,157.36Z"/><path class="cls-2" d="M216,0,29.79,2.11c-6.6,0-14.22,2.95-18.39,12L0,50.09c0,6.6,23.29,6,29.89,6L225.06,52c6.6,0,25.6.6,25.6-6L237.06,12C230.1.35,222.56,0,216,0Z"/><rect class="cls-3" x="108.61" y="60.69" width="32.5" height="32.5" rx="5.75" ry="5.75"/><path class="cls-4" d="M111.82,63.42c-.33-7.59,6.49-17.4,13.63-17.52,6.61-.11,11.74,10.55,12.46,17.52"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 250.7 159.5" xml:space="preserve">
+<title>box</title>
+<g id="Layer_2_1_">
+	<g id="box">
+		<path fill="#AD8E0C" d="M239.3,157.4l-227.9,2.1c-6.3,0-11.4-5.1-11.4-11.4V59.5c0-6.3,5.1-11.4,11.4-11.4L239.3,46
+			c6.3,0,11.4,5.1,11.4,11.4V146C250.6,152.3,245.5,157.3,239.3,157.4z"/>
+		<path fill="#9B7E08" d="M216,0L29.8,2.1c-6.6,0-14.2,3-18.4,12L0,50.1c0,6.6,23.3,6,29.9,6L225.1,52c6.6,0,25.6,0.6,25.6-6
+			l-13.6-34C230.1,0.3,222.6,0,216,0z"/>
+		<path fill="#666252" d="M114.4,60.7h21c3.2,0,5.8,2.6,5.8,5.8v21c0,3.2-2.6,5.8-5.8,5.8h-21c-3.2,0-5.8-2.6-5.8-5.8v-21
+			C108.6,63.3,111.2,60.7,114.4,60.7z"/>
+		<path fill="none" stroke="#9E9B8D" stroke-width="7" stroke-miterlimit="10" d="M111.8,63.4c-0.3-7.6,6.5-17.4,13.6-17.5
+			c6.6-0.1,11.7,10.5,12.5,17.5"/>
+	</g>
+</g>
+</svg>
