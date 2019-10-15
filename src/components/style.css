@@ -8,6 +8,10 @@
     text-align: center;
     transform:translate(20%, 500%);
 }
+.note {
+    width:5%;
+    cursor: pointer;
+}
 
 .typed {
     transform:translate(0%, 200%);
