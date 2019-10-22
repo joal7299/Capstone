@@ -1,8 +1,9 @@
 import React from 'react'
 import Lizzo from "../img/lizzo.mp3"
-import Note1 from "../img/note1.svg"
-import Note2 from "../img/note2.svg"
-import Note3 from "../img/note3.svg"
+import Note1 from "../img/note1-1.svg"
+import Note2 from "../img/note2-1.svg"
+import Note3 from "../img/note3-1.svg"
+import {ReactComponent as Bus} from "../img/Bus-Scene.svg"
 
 
 
@@ -57,6 +58,7 @@ class Friend extends React.Component {
                         {/*<button style={{position: "absolute", top: top, left: left}} onClick={this.song}></button>*/}
                     </div>
                         }
+                        <Bus></Bus>
                 </div>
         )
     }
