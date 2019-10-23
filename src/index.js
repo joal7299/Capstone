@@ -9,6 +9,7 @@ import Friend from './components/Friend';
 import Driver from './components/Driver';
 import Boyfriend from './components/Boyfriend';
 import Sister from './components/Sister';
+import TextMomtoFriend from "./components/TextMomtoFriend";
 
 
 const routing = (
@@ -21,6 +22,8 @@ const routing = (
             <Route path="/friend" component={Friend}/>
             <Route path="/boyfriend" component={Boyfriend}/>
             <Route path="/driver" component={Driver}/>
+            <Route path="/textMomtoFriend" component={TextMomtoFriend}/>
+
         </div>
     </Router>
 )

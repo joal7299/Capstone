@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+.textFrom {
+    width: 40%;
+    /*transform:translate(0%, 0%);*/
+
+}
+
+.textTo {
+    width: 40%;
+    /*transform:translate(150%, 0%);*/
+}
+
 .typedIntro {
     font-size: 3em;
     text-align: center;
