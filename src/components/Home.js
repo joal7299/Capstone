@@ -21,7 +21,7 @@ import Text from "../img/textBubble.png";
 class Home extends React.Component {
     render() {
         return (
-            <div className="container">
+            <div>
                 <Boyfriend className="grey2"/>
                 <Friend className="grey3"/>
                 <Mom className="grey4"/>

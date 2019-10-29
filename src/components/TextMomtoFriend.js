@@ -1,6 +1,7 @@
 import React from 'react'
 import {ReactComponent as TextFrom} from "../img/text-from.svg"
 import {ReactComponent as TextTo} from "../img/text-to.svg"
+import {ReactComponent as Phone} from "../img/Phone.svg"
 import "animate.css/animate.min.css"
 import ScrollAnimation from "react-animate-on-scroll"
 import { Redirect } from 'react-router-dom'
@@ -9,9 +10,9 @@ import { Redirect } from 'react-router-dom'
 class TextMomtoFriend extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            complete: false
-        };
+        // this.state = {
+        //     complete: false
+        // };
     }
 
     render() {
@@ -19,7 +20,9 @@ class TextMomtoFriend extends React.Component {
             <div>
                 <ScrollAnimation animateIn="bounceInRight">
                     <TextTo className="textTo"></TextTo>
-                    <p className="textFromMomtoFriend">Hey Jess, hope you're<br></br> hanging in there.</p>
+                    {/*<p className="textFromMomtoFriend">Hey Jess, hope you're<br></br> hanging in there.</p>*/}
+                    <p className="textFromMomtoFriend">Hey Tony, hope you're<br></br> hanging in there.</p>
+
                 </ScrollAnimation>
                 <ScrollAnimation delay="2600" animateIn="bounceInLeft">
                     <TextFrom className="textFrom"></TextFrom>
@@ -27,15 +30,14 @@ class TextMomtoFriend extends React.Component {
                 </ScrollAnimation>
                 <ScrollAnimation delay ="5500" animateIn="bounceInRight">
                     <TextTo className="textTo"></TextTo>
-                    <p className="textFromMomtoFriend3">Same here. I found a<br></br> sweet note she wrote<br></br> about me.. really comforting</p>
+                    <p className="textFromMomtoFriend3">Same here. I found a sweet<br></br> note she wrote about me..<br></br> really comforting</p>
                 </ScrollAnimation>
-                <ScrollAnimation delay ="6100" animateIn="bounceInRight">
+                <ScrollAnimation delay ="1000" animateIn="bounceInRight">
                     <TextTo className="textTo2"></TextTo>
-                    <p className="textFromMomtoFriend4">It made me think of you,<br></br>she loved you SO much.<br></br> xoxo</p>
+                    {/*<p className="textFromMomtoFriend4">It made me think of you,<br></br>she loved you SO much.<br></br> xoxo</p>*/}
+                    <p className="textFromMomtoFriend4">Also, found a scrapbook I<br></br>think Steph was making for<br></br>your anniversary.</p>
                 </ScrollAnimation>
-                {this.state.complete == true &&
-                <Redirect to="/home"/>
-                }
+                {/*<Phone className="phone"/>*/}
             </div>
         )
     }
