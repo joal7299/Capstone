@@ -6,7 +6,9 @@ import {ReactComponent as Person1} from "../img/person1.svg"
 import {ReactComponent as Boyfriend} from "../img/boyfriend.svg"
 import {ReactComponent as Friend} from "../img/bestfriend.svg"
 import {ReactComponent as Mom} from "../img/mom.svg"
-
+import Typed from 'react-typed'
+import "animate.css/animate.min.css"
+import ScrollAnimation from "react-animate-on-scroll"
 
 import Hover from "./Hover.js"
 import {ReactComponent as Grey2} from "../img/grey2.svg"
@@ -19,19 +21,72 @@ import {ReactComponent as Grey5} from "../img/grey5.svg"
 import {ReactComponent as Person5} from "../img/person5.svg"
 import Text from "../img/textBubble.png";
 class Home extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            mom: true,
+            boyfriend: false,
+            friend: false,
+        };
+    }
     render() {
         return (
             <div>
-                <Boyfriend className="grey2"/>
-                <Friend className="grey3"/>
-                <Mom className="grey4"/>
+                { this.state.mom==true &&
+                    <div>
+                    <div className="typed" style={{textAlign: "center"}}>
+                        <Typed className="typedFuneral" strings={['hello everyone, thank you so much for coming today']}
+                               fadeOut={true}
+                               typeSpeed={35} onComplete={() => {
+                            setTimeout(function () {
+                                    this.setState({friend: true, mom:false, boyfriend: false})
+                                }.bind(this),
+                                2000)
+                        }}
+                        />
+                    </div>
+                < Boyfriend className="grey2O"/>
+                    <Friend className="grey3O"/>
+                    <Mom className="grey4"/>
+                    <Gravestone className="gravestone"/>
+                    <Funeral/>
+                    </div>
+                }
+
+                {this.state.friend == true &&
+                <div>
+                    <div className="typed" style={{textAlign: "center"}}>
+                        <Typed className="typedFuneral" strings={['me']}
+                               fadeOut={true}
+                               typeSpeed={35} onComplete={() => {
+                            setTimeout(function () {
+                                    this.setState({boyfriend: true})
+                                }.bind(this),
+                                2000)
+                        }}
+                        />
+                    </div>
+                    < Boyfriend className="grey2O"/>
+                    <Friend className="grey3"/>
+                    <Mom className="grey4O"/>
+
+
+                    {/*<Intro notSpeaking={<Boyfriend className="grey2O"/>} speaking={<Boyfriend className="grey2"/>} />*/}
+                    {/*<Intro notSpeaking={<Friend className="grey3O"/>} speaking={<Friend className="grey3"/>} />*/}
+                    {/*<Intro notSpeaking={<Mom className="grey4O"/>} speaking={<Mom className="grey4"/>} />*/}
+                    <Gravestone className="gravestone"/>
+                    <Funeral/>
+                </div>
+                }
+
+
+
                 {/*<Hover noHoverSvg={<Grey1 className="grey1"/>} hoverSvg={<Person1 onClick={()=> window.location.href="Sister"} className="person1"/>} textBox={<img src={Text} className="textBubbleGrey1" />} texts={<p className="textHomeGrey1">I miss my sister. I don’t<br></br> know what I’ll do without<br></br> her; I’ve never had to try.</p>}/>*/}
                 {/*<Hover noHoverSvg={<Grey2 className="grey2"/>} hoverSvg={<Person2 onClick={()=> window.location.href="Boyfriend"} className="person2"/>} textBox={<img src={Text} className="textBubbleGrey2" />} texts={<p className="textHomeGrey2">We were starting to build<br></br> our lives together. Now she’s <br></br> gone, I'm heartbroken. </p>}/>*/}
                 {/*<Hover noHoverSvg={<Grey3 className="grey3"/>} hoverSvg={<Person3 onClick={()=> window.location.href="Friend"} className="person3"/>} textBox={<img src={Text} className="textBubbleGrey3" />} texts={<p className="textHomeGrey3">All I see when I close my <br></br>eyes is Stephanie. I can still<br></br> hear my best friends laugh.</p>}/>*/}
                 {/*<Hover noHoverSvg={<Grey4 className="grey4"/>} hoverSvg={<Person4 onClick={()=> window.location.href="Driver"} className="person4"/>} textBox={<img src={Text} className="textBubbleGrey4" />} texts={<p className="textHomeGrey4">I can’t believe it, I feel so <br></br> guilty. I don’t know what I <br></br>can do to make this right.</p>}/>*/}
                 {/*<Hover noHoverSvg={<Grey5 className="grey5"/>} hoverSvg={<Person5 onClick={()=> window.location.href="Parent"} className="person5"/>} textBox={<img src={Text} className="textBubbleGrey5" />} texts={<p className="textHomeGrey5">My baby girl Stephanie<br></br> is gone, I just don’t know<br></br> what I’m going to do. </p>}/>*/}
-                <Gravestone className="gravestone"/>
-                <Funeral/>
+
             </div>
         )
     }

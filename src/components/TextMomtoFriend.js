@@ -1,7 +1,7 @@
 import React from 'react'
 import {ReactComponent as TextFrom} from "../img/text-from.svg"
 import {ReactComponent as TextTo} from "../img/text-to.svg"
-import {ReactComponent as Phone} from "../img/Phone.svg"
+import {ReactComponent as TextBox} from "../img/TextBox.svg"
 import "animate.css/animate.min.css"
 import ScrollAnimation from "react-animate-on-scroll"
 import { Redirect } from 'react-router-dom'
@@ -37,7 +37,13 @@ class TextMomtoFriend extends React.Component {
                     {/*<p className="textFromMomtoFriend4">It made me think of you,<br></br>she loved you SO much.<br></br> xoxo</p>*/}
                     <p className="textFromMomtoFriend4">Also, found a scrapbook I<br></br>think Steph was making for<br></br>your anniversary.</p>
                 </ScrollAnimation>
-                {/*<Phone className="phone"/>*/}
+
+                <ScrollAnimation delay="3000" animateIn="fadeIn">
+                    <p className="sendText">Thanks, I'll come pick it up.</p>
+                    <TextBox className="texting"/>
+                </ScrollAnimation>
+
+
             </div>
         )
     }
