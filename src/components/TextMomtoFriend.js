@@ -38,9 +38,11 @@ class TextMomtoFriend extends React.Component {
                     <p className="textFromMomtoFriend4">Also, found a scrapbook I<br></br>think Steph was making for<br></br>your anniversary.</p>
                 </ScrollAnimation>
 
-                <ScrollAnimation delay="3000" animateIn="fadeIn">
+                <ScrollAnimation animateIn="bounceInRight">
+                    <div>
                     <p className="sendText">Thanks, I'll come pick it up.</p>
                     <TextBox className="texting"/>
+                    </div>
                 </ScrollAnimation>
 
 

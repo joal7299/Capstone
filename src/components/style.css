@@ -2,10 +2,16 @@
     margin:0;
     padding: 0;
 }
-.typedFuneral {
+.typedFuneralMom {
     font-size: 2vw;
-    color: black;
+    color: darkred;
 }
+
+.typedFuneralFriend {
+    font-size: 2vw;
+    color: darkgoldenrod;
+}
+
 .textFrom {
     z-index: 10;
     /*width: 40%;*/
@@ -18,7 +24,7 @@
 }
 
 .texting {
-    z-index: 10;
+    z-index: 39;
     width: 50vw;
     transform:translate(35%, 0%);
     padding-bottom: 3%;

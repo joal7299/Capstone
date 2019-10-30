@@ -24,18 +24,55 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mom: true,
-            boyfriend: false,
-            friend: false,
+            mom: {talking: true, linNum: 0},
+            boyfriend: {talking: false, linNum: 0},
+            friend: {talking: false, linNum:0}
         };
     }
     render() {
+        var momTalk = this.state.mom.talking;
+        var momLine = this.state.mom.linNum;
+        var boyfriendTalk = this.state.boyfriend.talking;
+        var boyfriendLine = this.state.boyfriend.linNum;
+        var friendTalk = this.state.friend.talking;
+        var boyfriendLine = this.state.friend.linNum;
+
+
+
         return (
             <div>
-                { this.state.mom==true &&
-                    <div>
+                { this.state.mom.talking==true && this.state.mom.linNum==0 &&
+                    <div className="typed" >
+                        <Typed className="typedFuneralMom" strings={['hello everyone, thank you so much for coming today']}
+                               fadeOut={true}
+                               typeSpeed={35} onComplete={() => {
+                            setTimeout(function () {
+                                    this.setState({friend: true, mom:true, boyfriend: false})
+                                }.bind(this),
+                                2000)
+                        }}
+                        />
+                    </div>
+                }
+
+                {this.state.friend.talking == true && this.state.friend.linNum==0 &&
                     <div className="typed" style={{textAlign: "center"}}>
-                        <Typed className="typedFuneral" strings={['hello everyone, thank you so much for coming today']}
+                        <Typed className="typedFuneralFriend" strings={['I was her best friend']}
+                               fadeOut={true}
+                               typeSpeed={35} onComplete={() => {
+                            setTimeout(function () {
+                                    this.setState({mom: true, friend: false, boyfriend: false})
+                                }.bind(this),
+                                2000)
+                        }}
+                        />
+                    </div>
+                }
+
+
+                { this.state.mom.talking==true && this.state.mom.linNum==1 &&
+                    <div className="typed" >
+                        <Typed className="typedFuneralMom" strings={['this is the mother']}
                                fadeOut={true}
                                typeSpeed={35} onComplete={() => {
                             setTimeout(function () {
@@ -45,38 +82,6 @@ class Home extends React.Component {
                         }}
                         />
                     </div>
-                < Boyfriend className="grey2O"/>
-                    <Friend className="grey3O"/>
-                    <Mom className="grey4"/>
-                    <Gravestone className="gravestone"/>
-                    <Funeral/>
-                    </div>
-                }
-
-                {this.state.friend == true &&
-                <div>
-                    <div className="typed" style={{textAlign: "center"}}>
-                        <Typed className="typedFuneral" strings={['me']}
-                               fadeOut={true}
-                               typeSpeed={35} onComplete={() => {
-                            setTimeout(function () {
-                                    this.setState({boyfriend: true})
-                                }.bind(this),
-                                2000)
-                        }}
-                        />
-                    </div>
-                    < Boyfriend className="grey2O"/>
-                    <Friend className="grey3"/>
-                    <Mom className="grey4O"/>
-
-
-                    {/*<Intro notSpeaking={<Boyfriend className="grey2O"/>} speaking={<Boyfriend className="grey2"/>} />*/}
-                    {/*<Intro notSpeaking={<Friend className="grey3O"/>} speaking={<Friend className="grey3"/>} />*/}
-                    {/*<Intro notSpeaking={<Mom className="grey4O"/>} speaking={<Mom className="grey4"/>} />*/}
-                    <Gravestone className="gravestone"/>
-                    <Funeral/>
-                </div>
                 }
 
 
@@ -86,6 +91,11 @@ class Home extends React.Component {
                 {/*<Hover noHoverSvg={<Grey3 className="grey3"/>} hoverSvg={<Person3 onClick={()=> window.location.href="Friend"} className="person3"/>} textBox={<img src={Text} className="textBubbleGrey3" />} texts={<p className="textHomeGrey3">All I see when I close my <br></br>eyes is Stephanie. I can still<br></br> hear my best friends laugh.</p>}/>*/}
                 {/*<Hover noHoverSvg={<Grey4 className="grey4"/>} hoverSvg={<Person4 onClick={()=> window.location.href="Driver"} className="person4"/>} textBox={<img src={Text} className="textBubbleGrey4" />} texts={<p className="textHomeGrey4">I can’t believe it, I feel so <br></br> guilty. I don’t know what I <br></br>can do to make this right.</p>}/>*/}
                 {/*<Hover noHoverSvg={<Grey5 className="grey5"/>} hoverSvg={<Person5 onClick={()=> window.location.href="Parent"} className="person5"/>} textBox={<img src={Text} className="textBubbleGrey5" />} texts={<p className="textHomeGrey5">My baby girl Stephanie<br></br> is gone, I just don’t know<br></br> what I’m going to do. </p>}/>*/}
+                < Boyfriend className={this.state.boyfriend ? "grey2" : "grey2O"}/>
+                <Friend className={this.state.friend ? "grey3" : "grey3O"}/>
+                <Mom className={this.state.mom ? "grey4" : "grey4O"}/>
+                <Gravestone className="gravestone"/>
+                <Funeral/>
 
             </div>
         )
