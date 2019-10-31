@@ -3,13 +3,34 @@
     padding: 0;
 }
 .typedFuneralMom {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: darkred;
 }
 
+.typedMom {
+    transform:translate(55%, 320%);
+    z-index: 50;
+}
+
 .typedFuneralFriend {
-    font-size: 2vw;
-    color: darkgoldenrod;
+    font-size: 1.5vw;
+    color: #7E7126;
+}
+
+.typedFriend {
+    transform:translate(40%, 320%);
+    z-index: 50;
+}
+
+.typedSteph {
+    z-index: 50;
+    transform: translate(30%, 0%);
+    padding:1vw;
+}
+
+.typedFuneralSteph {
+    font-size: 1.8vw;
+    color:black;
 }
 
 .textFrom {
@@ -91,8 +112,10 @@
 }
 
 .typed {
-    transform:translate(0%, 200%);
+    transform:translate(15%, 200%);
     z-index: 30;
+    background-color: black;
+    color:white;
 }
 
 /*.container {*/

@@ -12,16 +12,19 @@ class App extends React.Component {
     }
 
   render() {
-    return (
-        <div className="typed" style={{textAlign: "center"}}>
-            <Typed className="typedIntro" strings={['your name is Stephanie Walker', 'you are 22 years old','on September 5th, 2019, you were driving home', 'and from what seemed to be out of nowhere', 'you were hit and killed in a severe car accident', 'life would never be the same.', 'welcome to your funeral']}  fadeOutDelay= {500}
-            typeSpeed={35} backSpeed={50} onComplete={()=>{setTimeout(function() {this.setState({complete:true})}.bind(this),
+      var color = document.body.style.backgroundColor = "black";
+      return (
+          <div style={{backgroundColor:"black"}}>
+        <div className="typed" >
+            <Typed className="typedIntro" strings={["...","what's going on??", "where am I, why do I feel so strange?", "the last thing I remember was driving in my car and I saw headlights and...", "now I'm here.", "but where is here?"]}  fadeOutDelay= {500}
+            typeSpeed={50} fadeOut={3000} onComplete={()=>{setTimeout(function() {this.setState({complete:true})}.bind(this),
                 2000)}}
         />
             {this.state.complete == true &&
                 <Redirect to="/home"/>
             }
         </div>
+          </div>
   )
   }
 }

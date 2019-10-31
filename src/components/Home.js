@@ -24,30 +24,38 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mom: {talking: true, linNum: 0},
-            boyfriend: {talking: false, linNum: 0},
-            friend: {talking: false, linNum:0}
+            momTalk:false,
+            momLin:0,
+            boyTalk:false,
+            boyLin:0,
+            friendTalk:false,
+            friendLin:0,
+            stephTalk: true,
+            stephLin:0,
+            // mom: {talking: true, linNum: 0},
+            // boyfriend: {talking: false, linNum: 0},
+            // friend: {talking: false, linNum:0}
         };
     }
     render() {
-        var momTalk = this.state.mom.talking;
-        var momLine = this.state.mom.linNum;
-        var boyfriendTalk = this.state.boyfriend.talking;
-        var boyfriendLine = this.state.boyfriend.linNum;
-        var friendTalk = this.state.friend.talking;
-        var boyfriendLine = this.state.friend.linNum;
+        // var momTalk = this.state.mom.talking;
+        // var momLine = this.state.mom.linNum;
+        // var boyfriendTalk = this.state.boyfriend.talking;
+        // var boyfriendLine = this.state.boyfriend.linNum;
+        // var friendTalk = this.state.friend.talking;
+        // var boyfriendLine = this.state.friend.linNum;
 
 
 
         return (
             <div>
-                { this.state.mom.talking==true && this.state.mom.linNum==0 &&
-                    <div className="typed" >
-                        <Typed className="typedFuneralMom" strings={['hello everyone, thank you so much for coming today']}
+                { this.state.momTalk==true && this.state.momLin==0 &&
+                    <div className="typedMom">
+                        <Typed className="typedFuneralMom" strings={['Thanks so much for coming today',"It means a lot to me and I'm sure it would mean a lot to Stephanie"]}
                                fadeOut={true}
                                typeSpeed={35} onComplete={() => {
                             setTimeout(function () {
-                                    this.setState({friend: true, mom:true, boyfriend: false})
+                                    this.setState({friendTalk: false, momTalk:false, momLin:1, stephTalk:true, boyTalk: false})
                                 }.bind(this),
                                 2000)
                         }}
@@ -55,13 +63,27 @@ class Home extends React.Component {
                     </div>
                 }
 
-                {this.state.friend.talking == true && this.state.friend.linNum==0 &&
-                    <div className="typed" style={{textAlign: "center"}}>
-                        <Typed className="typedFuneralFriend" strings={['I was her best friend']}
+                { this.state.momTalk==true && this.state.momLin==1 &&
+                <div className="typedMom">
+                    <Typed className="typedFuneralMom" strings={["Stephanie meant everything to me."," After her father died she was all I had"," I wanted to protect her more than anything.", " I remember when she was young,", "all she wanted to do was become a rock climber.","I told her no, that it was too dangerous."," I wish I would have let her and not been so concerned.", " I regret not letting her make her own choices,"," I just held her back from doing what she wanted most."]}
+                           fadeOut={true}
+                           typeSpeed={35} onComplete={() => {
+                        setTimeout(function () {
+                                this.setState({friendTalk: true, momTalk:false, momLin:2, stephTalk:false, boyTalk: false})
+                            }.bind(this),
+                            2000)
+                    }}
+                    />
+                </div>
+                }
+
+                {this.state.friendTalk == true && this.state.friendLin==0 &&
+                    <div className="typedFriend">
+                        <Typed className="typedFuneralFriend" strings={["Oh Mrs. Walker, I’m sure Stephanie didn’t see it that way.", "I miss her so much.", " I miss all the things that we used to do together,", "now it feels like I can’t enjoy them without her."]}
                                fadeOut={true}
                                typeSpeed={35} onComplete={() => {
                             setTimeout(function () {
-                                    this.setState({mom: true, friend: false, boyfriend: false})
+                                    this.setState({momTalk: true, friendTalk: false, friendLin:1, boyfriendTalk: false})
                                 }.bind(this),
                                 2000)
                         }}
@@ -69,32 +91,37 @@ class Home extends React.Component {
                     </div>
                 }
 
-
-                { this.state.mom.talking==true && this.state.mom.linNum==1 &&
-                    <div className="typed" >
-                        <Typed className="typedFuneralMom" strings={['this is the mother']}
-                               fadeOut={true}
-                               typeSpeed={35} onComplete={() => {
-                            setTimeout(function () {
-                                    this.setState({friend: true, mom:false, boyfriend: false})
-                                }.bind(this),
-                                2000)
-                        }}
-                        />
-                    </div>
-                }
-
-
-
-                {/*<Hover noHoverSvg={<Grey1 className="grey1"/>} hoverSvg={<Person1 onClick={()=> window.location.href="Sister"} className="person1"/>} textBox={<img src={Text} className="textBubbleGrey1" />} texts={<p className="textHomeGrey1">I miss my sister. I don’t<br></br> know what I’ll do without<br></br> her; I’ve never had to try.</p>}/>*/}
-                {/*<Hover noHoverSvg={<Grey2 className="grey2"/>} hoverSvg={<Person2 onClick={()=> window.location.href="Boyfriend"} className="person2"/>} textBox={<img src={Text} className="textBubbleGrey2" />} texts={<p className="textHomeGrey2">We were starting to build<br></br> our lives together. Now she’s <br></br> gone, I'm heartbroken. </p>}/>*/}
-                {/*<Hover noHoverSvg={<Grey3 className="grey3"/>} hoverSvg={<Person3 onClick={()=> window.location.href="Friend"} className="person3"/>} textBox={<img src={Text} className="textBubbleGrey3" />} texts={<p className="textHomeGrey3">All I see when I close my <br></br>eyes is Stephanie. I can still<br></br> hear my best friends laugh.</p>}/>*/}
-                {/*<Hover noHoverSvg={<Grey4 className="grey4"/>} hoverSvg={<Person4 onClick={()=> window.location.href="Driver"} className="person4"/>} textBox={<img src={Text} className="textBubbleGrey4" />} texts={<p className="textHomeGrey4">I can’t believe it, I feel so <br></br> guilty. I don’t know what I <br></br>can do to make this right.</p>}/>*/}
-                {/*<Hover noHoverSvg={<Grey5 className="grey5"/>} hoverSvg={<Person5 onClick={()=> window.location.href="Parent"} className="person5"/>} textBox={<img src={Text} className="textBubbleGrey5" />} texts={<p className="textHomeGrey5">My baby girl Stephanie<br></br> is gone, I just don’t know<br></br> what I’m going to do. </p>}/>*/}
-                < Boyfriend className={this.state.boyfriend ? "grey2" : "grey2O"}/>
-                <Friend className={this.state.friend ? "grey3" : "grey3O"}/>
-                <Mom className={this.state.mom ? "grey4" : "grey4O"}/>
+                < Boyfriend className={this.state.boyTalk ? "grey2" : "grey2O"}/>
+                <Friend className={this.state.friendTalk ? "grey3" : "grey3O"}/>
+                <Mom className={this.state.momTalk ? "grey4" : "grey4O"}/>
                 <Gravestone className="gravestone"/>
+
+                {this.state.stephTalk==true && this.state.stephLin==0 &&
+                <div className="typedSteph">
+                    <Typed className="typedFuneralSteph" strings={["who are these people?", "Mom! Eric! Kelly!", "Hello?!  can anyone hear me?"]}
+                           fadeOut={true}
+                           typeSpeed={35} onComplete={() => {
+                        setTimeout(function () {
+                                this.setState({friendTalk: false, momTalk:true, stephTalk:false, stephLin:1, boyTalk: false})
+                            }.bind(this),
+                            2000)
+                    }}
+                    />
+                </div>
+                }
+                {this.state.stephTalk==true && this.state.stephLin==1 &&
+                <div className="typedSteph">
+                    <Typed className="typedFuneralSteph" strings={["why are you talking about me like I'm.. dead."]}
+                           fadeOut={true}
+                           typeSpeed={35} onComplete={() => {
+                        setTimeout(function () {
+                                this.setState({friendTalk: false, momTalk:true, stephTalk: false, stephLin:2, boyTalk: false})
+                            }.bind(this),
+                            2000)
+                    }}
+                    />
+                </div>
+                }
                 <Funeral/>
 
             </div>
