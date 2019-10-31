@@ -65,12 +65,30 @@
     transform: translate(85%,40%);
 }
 
+.wrap {
+    margin: 30px;
+}
+
 .textTo {
     z-index: 10;
     width:30vw;
+    position: absolute;
+    top: 5%;
+    right: 100%;
+    /* top: 25px;
+    right: 100px;
     padding-bottom: 5%;
     padding-top: 5%;
-    transform:translate(150%, 0%);
+    transform:translate(10%, 10%);
+    transition: all 2s; */
+    /* transform:translate(150%, 0%); */
+
+}
+
+#text .move-right{
+    transform: translateX(350px, 0);
+    -webkit-transform: translate(350px,0);
+    transition: all 2s;
 }
 
 .textTo2 {
