@@ -22,6 +22,16 @@
     z-index: 50;
 }
 
+.typedFuneralBoy {
+    font-size: 1.5vw;
+    color: darkblue;
+}
+
+.typedBoy {
+    transform:translate(10%, 320%);
+    z-index: 50;
+}
+
 .typedSteph {
     z-index: 50;
     transform: translate(30%, 0%);
@@ -30,7 +40,7 @@
 
 .typedFuneralSteph {
     font-size: 1.8vw;
-    color:black;
+    color:white;
 }
 
 .textFrom {

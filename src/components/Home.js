@@ -8,6 +8,8 @@ import {ReactComponent as Friend} from "../img/bestfriend.svg"
 import {ReactComponent as Mom} from "../img/mom.svg"
 import Typed from 'react-typed'
 import "animate.css/animate.min.css"
+import { Redirect } from 'react-router-dom'
+
 import ScrollAnimation from "react-animate-on-scroll"
 
 import Hover from "./Hover.js"
@@ -32,21 +34,14 @@ class Home extends React.Component {
             friendLin:0,
             stephTalk: true,
             stephLin:0,
+            complete:false
             // mom: {talking: true, linNum: 0},
             // boyfriend: {talking: false, linNum: 0},
             // friend: {talking: false, linNum:0}
         };
     }
     render() {
-        // var momTalk = this.state.mom.talking;
-        // var momLine = this.state.mom.linNum;
-        // var boyfriendTalk = this.state.boyfriend.talking;
-        // var boyfriendLine = this.state.boyfriend.linNum;
-        // var friendTalk = this.state.friend.talking;
-        // var boyfriendLine = this.state.friend.linNum;
-
-
-
+        var color = document.body.style.backgroundColor = "black";
         return (
             <div>
                 { this.state.momTalk==true && this.state.momLin==0 &&
@@ -79,16 +74,29 @@ class Home extends React.Component {
 
                 {this.state.friendTalk == true && this.state.friendLin==0 &&
                     <div className="typedFriend">
-                        <Typed className="typedFuneralFriend" strings={["Oh Mrs. Walker, I’m sure Stephanie didn’t see it that way.", "I miss her so much.", " I miss all the things that we used to do together,", "now it feels like I can’t enjoy them without her."]}
+                        <Typed className="typedFuneralFriend" strings={["Oh Mrs. Walker, I’m sure Stephanie didn’t see it that way.", "I miss her so much.", " I miss all the things that we used to do together,", "now it feels like I can’t enjoy them without my best friend."," I just wish we could listen to our favorite songs","and talk about everything and anything.","I love you Steph."]}
                                fadeOut={true}
                                typeSpeed={35} onComplete={() => {
                             setTimeout(function () {
-                                    this.setState({momTalk: true, friendTalk: false, friendLin:1, boyfriendTalk: false})
+                                    this.setState({momTalk: false, friendTalk: false, friendLin:1, boyTalk: true, stephTalk:false})
                                 }.bind(this),
                                 2000)
                         }}
                         />
                     </div>
+                }
+                {this.state.boyTalk == true && this.state.boyLin==0 &&
+                <div className="typedBoy">
+                    <Typed className="typedFuneralBoy" strings={["I just never imagined something like this could happen to her", "The last time we talked we fought about our relationship."," I’ve always been bad at expressing my emotions,"," especially towards the ones I love the most.","I wish I could tell her that she meant more to me than anything.", "She was my entire world, and now she’s gone."]}
+                           fadeOut={true}
+                           typeSpeed={35} onComplete={() => {
+                        setTimeout(function () {
+                                this.setState({momTalk: false, friendTalk: false, boyLin:1, boyfriendTalk: false, stephTalk:true})
+                            }.bind(this),
+                            2000)
+                    }}
+                    />
+                </div>
                 }
 
                 < Boyfriend className={this.state.boyTalk ? "grey2" : "grey2O"}/>
@@ -121,6 +129,22 @@ class Home extends React.Component {
                     }}
                     />
                 </div>
+                }
+                {this.state.stephTalk==true && this.state.stephLin==2 &&
+                <div className="typedSteph">
+                    <Typed className="typedFuneralSteph" strings={[" I wish I could reach out and touch them,","hug them","let them know that it's okay.","I don’t regret a single second with them.","I wish there was some way I could help them move on."]}
+                           fadeOut={true}
+                           typeSpeed={35} onComplete={() => {
+                        setTimeout(function () {
+                                this.setState({complete:true})
+                            }.bind(this),
+                            2000)
+                    }}
+                    />
+                </div>
+                }
+                {this.state.complete == true &&
+                <Redirect to="/parent"/>
                 }
                 <Funeral/>
 
