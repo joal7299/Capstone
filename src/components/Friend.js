@@ -1,5 +1,15 @@
 import React from 'react'
 import Lizzo from "../img/lizzo.mp3"
+
+import Note1 from "../img/note1-1.svg"
+import Note2 from "../img/note2-1.svg"
+import Note3 from "../img/note3-1.svg"
+import {ReactComponent as Bus} from "../img/Bus-Scene.svg"
+
+
+
+import {ReactComponent as Note} from "../img/background.svg"
+
 // import {ReactComponent as ProgressBar} from "../img/background.svg"
 
 
@@ -13,14 +23,13 @@ class Friend extends React.Component {
             top: 150,
             left: 150,
             visible: true,
-            percentage: 0
         }
         this.audio = new Audio(Lizzo);
         this.song = this.song.bind(this);
     }
 
     song = ()=> {
-        this.setState({top: (Math.floor(Math.random()*(window.screen.availHeight))), left: Math.floor(Math.random()*(window.screen.availWidth))});
+        this.setState({top: (Math.floor(Math.random()*(window.screen.availHeight-200))), left: Math.floor(Math.random()*(window.screen.availWidth-200))});
         console.log(this.state.left);
         if(this.state.playbackrate<1.5) {
             this.setState({playbackrate: this.state.playbackrate+.1});
@@ -32,33 +41,24 @@ class Friend extends React.Component {
             this.setState({visible: false});
         }
 
-        // this.setState({play:true});
     }
-    // const Filler = (props) => {
-    //     return <div className=="filler" />
-    // }
-    //
-    // const ProgressBar = (props) => {
-    //     return(
-    //         <div className="progress-bar"></div>
-    //         <Filler percentage={props.percentage} />
-    //     )
-    // }
 
 
     render() {
+        const notes = [Note1, Note2, Note3];
         let top = this.state.top;
         let left = this.state.left;
         console.log(top);
         return (
             <div>
-                <h1>Friend</h1>
                 {this.state.visible == true &&
                     <div>
                         {/*<ProgressBar percentage={this.state.percentage} />*/}
-                <button style={{position: "absolute", top: top, left: left}} onClick={this.song}>Click me!</button>
+                        <img className="note" style={{position: "absolute", top: top, left: left}} onClick={this.song} src={notes[Math.floor(Math.random()*notes.length)]} ></img>
+                        {/*<button style={{position: "absolute", top: top, left: left}} onClick={this.song}></button>*/}
                     </div>
                         }
+                        <Bus></Bus>
                 </div>
         )
     }
