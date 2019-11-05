@@ -12,12 +12,6 @@
     color: darkgoldenrod;
 }
 
-.textFrom {
-    z-index: 10;
-    /*width: 40%;*/
-    width:31vw;
-    transform:translate(45%, 0%);
-}
 
 .phone {
     width: 0%;
@@ -62,7 +56,7 @@
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(85%,40%);
+    transform: translate(90%,1000%);
 }
 
 .wrap {
@@ -73,8 +67,10 @@
     z-index: 10;
     width:30vw;
     position: absolute;
-    top: 5%;
-    right: 100%;
+    /* transform: translate(135%, 0%); */
+    transition: transform .5s;
+    transition-delay: .2s;
+    /* transform: translate(300px, 0px); */
     /* top: 25px;
     right: 100px;
     padding-bottom: 5%;
@@ -83,6 +79,38 @@
     transition: all 2s; */
     /* transform:translate(150%, 0%); */
 
+}
+
+.textFrom {
+    z-index: 10;
+    /*width: 40%;*/
+    width:31vw;
+    position: absolute;
+    transition: transform .5s;
+    transition-delay: .2s;
+    /* transform:translate(45%, 0%); */
+}
+
+.textOne {
+    z-index: 10;
+    width:30vw;
+    /* position: absolute; */
+    transform: translate(0%, 0%);
+}
+
+.textTwo{
+    z-index: 10;
+    width:30vw;
+    /* position: relative; */
+    transform: translate(230%, 100%);
+}
+
+.textTo:hover {
+    transform: translate(230%, 0%);
+  }
+
+.testFrom:hover{
+    transform: translate(0%, 100%);
 }
 
 #text .move-right{

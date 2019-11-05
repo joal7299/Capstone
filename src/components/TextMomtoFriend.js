@@ -18,35 +18,34 @@ class TextMomtoFriend extends React.Component {
     render() {
         return (
             <div>
-                {/* <ScrollAnimation animateIn="bounceInRight"> */}
-                <div id="text" className="1stText">
-                    <TextTo className="textTo move-right"></TextTo>
+
+                <div id="text" className="">
+                    <TextTo className="textTo"></TextTo>
                     {/*<p className="textFromMomtoFriend">Hey Jess, hope you're<br></br> hanging in there.</p>*/}
-                    <p className="textFromMomtoFriend">Hey Tony, hope you're<br></br> hanging in there.</p>
+                    <p className="textFromMomtoFriend">Hey Eric, hope you're<br></br> hanging in there.</p>
                 </div>
-                
-                {/* </ScrollAnimation> */}
-                {/* <ScrollAnimation delay="2600" animateIn="bounceInLeft">
+            
+                <div id="text" className="textFromMomtoFriend2">
                     <TextFrom className="textFrom"></TextFrom>
                     <p className="textFromMomtoFriend2">Hi Mrs.Walker! I miss<br></br> Steph a ton, but doing what<br></br> I can to be okay for now.</p>
-                </ScrollAnimation> */}
-                {/* <ScrollAnimation delay ="5500" animateIn="bounceInRight">
+                </div>
+                
+                <div>
                     <TextTo className="textTo"></TextTo>
                     <p className="textFromMomtoFriend3">Same here. I found a sweet<br></br> note she wrote about me..<br></br> really comforting</p>
-                </ScrollAnimation> */}
-
-                {/* <ScrollAnimation delay ="1000" animateIn="bounceInRight">
+                </div>
+                
+                {/* <div>
                     <TextTo className="textTo2"></TextTo>
                     <p className="textFromMomtoFriend4">It made me think of you,<br></br>she loved you SO much.<br></br> xoxo</p>
                     <p className="textFromMomtoFriend4">Also, found a scrapbook I<br></br>think Steph was making for<br></br>your anniversary.</p>
-                </ScrollAnimation> */}
-
-                {/* <ScrollAnimation animateIn="bounceInRight">
-                    <div>
+                </div>
+                
+                <div>
                     <p className="sendText">Thanks, I'll come pick it up.</p>
                     <TextBox className="texting"/>
-                    </div>
-                </ScrollAnimation>  */}
+                </div> */}
+                
 
 
             </div>
