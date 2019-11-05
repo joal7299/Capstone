@@ -13,7 +13,7 @@ import Trash from './components/Trash';
 import Note from './components/Note';
 import Music from './components/musicGame';
 import End from './components/End';
-import TextMomtoFriend from "./components/TextMomtoFriend";
+import TextMomtoBoyfriend from "./components/TextMomtoBoyfriend";
 
 
 const routing = (
@@ -29,7 +29,7 @@ const routing = (
             <Route path="/trash" component={Trash}/>
             <Route path="/note" component={Note}/>
             <Route path="/musicGame" component={Music}/>
-            <Route path="/textMomtoFriend" component={TextMomtoFriend}/>
+            <Route path="/textMomtoBoyfriend" component={TextMomtoBoyfriend}/>
             <Route path="/end" component={End}/>
 
         </div>

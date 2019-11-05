@@ -7,8 +7,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 import { Redirect } from 'react-router-dom'
 import Delay from "react-delay"
 
-
-class TextMomtoFriend extends React.Component {
+class TextMomtoBoyfriend extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -47,4 +46,4 @@ class TextMomtoFriend extends React.Component {
         )
     }
 }
-export default TextMomtoFriend;
+export default TextMomtoBoyfriend;
