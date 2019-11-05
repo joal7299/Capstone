@@ -117,8 +117,9 @@
     transform:translate(20%, 500%);
 }
 .note {
-    width:5%;
+    height: 5%;
     cursor: pointer;
+    z-index: 50;
 }
 
 .typed {

@@ -6,13 +6,13 @@ import App from './App';
 import Home from './components/Home';
 import Parent from './components/Parent';
 import Friend from './components/Friend';
-import Driver from './components/Driver';
 import Boyfriend from './components/Boyfriend';
 import Bed from './components/Bed';
 import Desk from './components/Desk';
 import Trash from './components/Trash';
 import Note from './components/Note';
 import Music from './components/musicGame';
+import End from './components/End';
 import TextMomtoFriend from "./components/TextMomtoFriend";
 
 
@@ -24,13 +24,14 @@ const routing = (
             <Route path="/parent" component={Parent}/>
             <Route path="/friend" component={Friend}/>
             <Route path="/boyfriend" component={Boyfriend}/>
-            <Route path="/driver" component={Driver}/>
             <Route path="/bed" component={Bed}/>
             <Route path="/desk" component={Desk}/>
             <Route path="/trash" component={Trash}/>
             <Route path="/note" component={Note}/>
             <Route path="/musicGame" component={Music}/>
             <Route path="/textMomtoFriend" component={TextMomtoFriend}/>
+            <Route path="/end" component={End}/>
+
         </div>
     </Router>
 )

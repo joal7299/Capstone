@@ -13,13 +13,7 @@ import {ReactComponent as Room} from "../img/RoomScene.svg"
 
 
 class Parent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            // stephTalk:true,
-        }
-    }
-        
+
     render() {
         var color = document.body.style.backgroundColor = "white";
 
