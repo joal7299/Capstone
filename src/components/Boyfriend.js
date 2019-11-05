@@ -2,9 +2,9 @@ import React from 'react'
 import Typed from "react-typed";
 import Left from "../img/leftArrow.svg"
 import Right from "../img/rightArrow.svg"
-import S1 from "../img/SB-Cover.svg"
-import Letter from "../img/letter.svg"
-import Note from "../img/Phone.svg"
+import Cover from "../img/SB-Cover.svg"
+import S1 from "../img/SBPg1.svg"
+import S2 from "../img/SBPg2.svg"
 
 class Boyfriend extends React.Component {
     constructor(props) {
@@ -29,7 +29,7 @@ class Boyfriend extends React.Component {
         }
     }
     render() {
-        const scrapbook = [S1, Letter, Note];
+        const scrapbook = [Cover, S1, S2];
         return (
             <div>
                 <div className="typedSteph">
