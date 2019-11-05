@@ -169,6 +169,13 @@
     transform: translate(105%,1610%);
 }
 
+h1 {
+    text-align: center;
+}
+
+.credits {
+    text-align: center;
+}
 .textTo {
     z-index: 10;
     width:30vw;

@@ -5,6 +5,7 @@ import Right from "../img/rightArrow.svg"
 import Cover from "../img/SB-Cover.svg"
 import S1 from "../img/SBPg1.svg"
 import S2 from "../img/SBPg2.svg"
+import S3 from "../img/SBPg3.svg"
 import { Redirect } from 'react-router-dom'
 
 
@@ -31,7 +32,7 @@ class Boyfriend extends React.Component {
         }
     }
     render() {
-        const scrapbook = [Cover, S1, S2];
+        const scrapbook = [Cover, S1, S2, S3];
         return (
             <div>
                 <div className="typedSteph">
