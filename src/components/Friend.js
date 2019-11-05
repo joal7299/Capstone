@@ -1,5 +1,6 @@
 import React from 'react'
-import Lizzo from "../img/lizzo.mp3"
+// import Lizzo from "../img/lizzo.mp3"
+import Lizzo from "../img/Don_t_Hate_Me.mp3"
 
 import Note1 from "../img/note1-1.svg"
 import Note2 from "../img/note2-1.svg"

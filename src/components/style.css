@@ -121,6 +121,13 @@
     cursor: pointer;
     z-index: 50;
 }
+.noteMom {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 .typed {
     transform:translate(15%, 200%);
@@ -423,11 +430,11 @@
     position: absolute;
 }
 
-.note{
+/* .note{
     transform: translate(50%,10%);
     width: 50%;
     position: absolute;
-}
+} */
 
 .noteInstructions{
     transform: translate(75%,30%);
