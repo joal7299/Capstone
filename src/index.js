@@ -14,6 +14,8 @@ import Note from './components/Note';
 import Music from './components/musicGame';
 import End from './components/End';
 import TextMomtoBoyfriend from "./components/TextMomtoBoyfriend";
+import TextErictofriend from "./components/TextErictoFriend";
+
 
 
 const routing = (
@@ -30,6 +32,7 @@ const routing = (
             <Route path="/note" component={Note}/>
             <Route path="/musicGame" component={Music}/>
             <Route path="/textMomtoBoyfriend" component={TextMomtoBoyfriend}/>
+            <Route path="/textErictofriend" component={TextErictofriend}/>
             <Route path="/end" component={End}/>
 
         </div>

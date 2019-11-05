@@ -56,7 +56,7 @@ class Boyfriend extends React.Component {
                 }
             <img className="scrapbook" src={scrapbook[this.state.i]}></img>
                 {this.state.i>2 &&
-                    <Redirect to="/textMomtoFriend"/>
+                    <Redirect to="/textErictoFriend"/>
                 }
             </div>
         )

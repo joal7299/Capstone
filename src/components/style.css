@@ -85,6 +85,13 @@
     padding-bottom: 3%;
 }
 
+.textingErictoFriend{
+    z-index: 39;
+    width: 50vw;
+    transform:translate(50%, 420%);
+    padding-bottom: 3%;
+}
+
 .textFromMomtoFriend {
     z-index: 40;
     font-size: 2.1vw;
@@ -113,11 +120,53 @@
     transform: translate(215%,90%);
 }
 
+.textErictoFriend1 {
+    z-index: 40;
+    font-size: 2.1vw;
+    position: absolute;
+    transform: translate(285%,-300%);
+}
+
+.textErictoFriend2 {
+    z-index: 40;
+    font-size: 2.1vw;
+    position: absolute;
+    transform: translate(80%,-50%);
+}
+
+.textErictoFriend3 {
+    z-index: 40;
+    font-size: 2.1vw;
+    position: absolute;
+    transform: translate(220%,85%);
+}
+
+.textErictoFriend4 {
+    z-index: 40;
+    font-size: 2.1vw;
+    position: absolute;
+    transform: translate(225%,110%);
+}
+
+.textErictoFriend5 {
+    z-index: 40;
+    font-size: 2.1vw;
+    position: absolute;
+    transform: translate(225%,320%);
+}
+
 .sendText {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
     transform: translate(95%,840%);
+}
+
+.sendTextEric {
+    z-index: 40;
+    font-size: 2.1vw;
+    position: absolute;
+    transform: translate(105%,1610%);
 }
 
 .textTo {
@@ -140,6 +189,13 @@
     width:30vw;
     padding-bottom: 3%;
     transform:translate(175%, 135%);
+}
+
+.textTo4 {
+    z-index: 10;
+    width:30vw;
+    padding-bottom: 3%;
+    transform:translate(75%, 230%);
 }
 
 .typedIntro {
