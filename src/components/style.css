@@ -55,8 +55,17 @@
 .sendText {
     z-index: 40;
     font-size: 2.1vw;
+    left: 20%;
     position: absolute;
-    transform: translate(90%,1000%);
+    /* transform: translate(90%,1000%); */
+    transition-property: left;
+    transition-duration: 1s;
+    transition-delay: 2s;
+    transition: transform 
+}
+
+.sendText:hover{
+    left: 0%;
 }
 
 .wrap {
