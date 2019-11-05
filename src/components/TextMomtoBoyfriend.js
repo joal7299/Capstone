@@ -2,8 +2,6 @@ import React from 'react'
 import {ReactComponent as TextFrom} from "../img/text-from.svg"
 import {ReactComponent as TextTo} from "../img/text-to.svg"
 import {ReactComponent as TextBox} from "../img/TextBox.svg"
-import Typed from "react-typed";
-import ScrollAnimation from "react-animate-on-scroll"
 import { Redirect } from 'react-router-dom'
 import Delay from "react-delay"
 
@@ -19,8 +17,7 @@ class TextMomtoBoyfriend extends React.Component {
         return (
             <div>
                     <TextTo className="textTo"></TextTo>
-                    {/*<p className="textFromMomtoFriend">Hey Jess, hope you're<br></br> hanging in there.</p>*/}
-                    <p className="textFromMomtoFriend">Hey Tony, hope you're<br></br> hanging in there.</p>
+                    <p className="textFromMomtoFriend">Hey Eric, hope you're<br></br> hanging in there.</p>
                     <Delay wait={3000}>
                         <TextFrom className="textFrom"></TextFrom>
                         <p className="textFromMomtoFriend2">Hi Mrs.Walker! I miss<br></br> Steph a ton, but doing what<br></br> I can to be okay for now.</p>
