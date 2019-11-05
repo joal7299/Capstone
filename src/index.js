@@ -13,6 +13,7 @@ import Trash from './components/Trash';
 import Note from './components/Note';
 import Music from './components/musicGame';
 import End from './components/End';
+import Credits from "./components/Credits"
 import TextMomtoBoyfriend from "./components/TextMomtoBoyfriend";
 
 
@@ -31,6 +32,8 @@ const routing = (
             <Route path="/musicGame" component={Music}/>
             <Route path="/textMomtoBoyfriend" component={TextMomtoBoyfriend}/>
             <Route path="/end" component={End}/>
+            <Route path="/credits" component={Credits}/>
+
 
         </div>
     </Router>
