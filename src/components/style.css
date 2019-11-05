@@ -40,7 +40,17 @@
 
 .typedFuneralSteph {
     font-size: 1.8vw;
+    color:white;
+}
+
+.typedRoomSteph {
+    font-size: 1.8vw;
     color:black;
+}
+
+.leftArrowBoy, .rightArrowBoy {
+    width:5%;
+    cursor: pointer;
 }
 
 .textFrom {
@@ -117,7 +127,7 @@
     transform:translate(20%, 500%);
 }
 .note {
-    height: 5%;
+    height: 10%;
     cursor: pointer;
     z-index: 50;
 }

@@ -1,18 +1,11 @@
 import React from 'react'
 import Lizzo from "../img/lizzo.mp3"
-
 import Note1 from "../img/note1-1.svg"
 import Note2 from "../img/note2-1.svg"
 import Note3 from "../img/note3-1.svg"
 import {ReactComponent as Bus} from "../img/Bus-Scene.svg"
 import { Redirect } from 'react-router-dom'
-
-
-
-import {ReactComponent as Note} from "../img/background.svg"
 import Typed from "react-typed";
-
-// import {ReactComponent as ProgressBar} from "../img/background.svg"
 
 
 class Friend extends React.Component {
@@ -26,7 +19,7 @@ class Friend extends React.Component {
             left: 150,
             visible: true,
             complete: false,
-            opacity:.5,
+            opacity:.4,
         }
         this.audio = new Audio(Lizzo);
         this.song = this.song.bind(this);
@@ -39,10 +32,10 @@ class Friend extends React.Component {
             this.setState({playbackrate: this.state.playbackrate+.1});
             this.audio.playbackRate = this.state.playbackrate;
             this.audio.play();
-            this.setState({opacity: this.state.opacity+.05});
+            this.setState({opacity: this.state.opacity+.075});
 
         }
-        if(this.state.playbackrate>1.3) {
+        if(this.state.playbackrate>1) {
             this.setState({visible: false});
         }
     }
