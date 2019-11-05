@@ -2,7 +2,7 @@ import React from 'react'
 import Typed from "react-typed";
 import Left from "../img/leftArrow.svg"
 import Right from "../img/rightArrow.svg"
-import Box from "../img/box.svg"
+import S1 from "../img/SB-Cover.svg"
 import Letter from "../img/letter.svg"
 import Note from "../img/Phone.svg"
 
@@ -29,7 +29,7 @@ class Boyfriend extends React.Component {
         }
     }
     render() {
-        const scrapbook = [Box, Letter, Note];
+        const scrapbook = [S1, Letter, Note];
         return (
             <div>
                 <div className="typedSteph">
@@ -52,7 +52,7 @@ class Boyfriend extends React.Component {
                 {this.state.i < 4 &&
                 <img className="rightArrowBoy" onClick={this.scrapbookRight} src={Right}></img>
                 }
-            <img src={scrapbook[this.state.i]}></img>
+            <img className="scrapbook" src={scrapbook[this.state.i]}></img>
 
             </div>
         )

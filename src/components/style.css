@@ -48,9 +48,23 @@
     color:black;
 }
 
-.leftArrowBoy, .rightArrowBoy {
+.leftArrowBoy {
     width:5%;
     cursor: pointer;
+    transform: translate(400%, 0%);
+
+}
+
+.rightArrowBoy {
+    width:5%;
+    cursor: pointer;
+    transform: translate(1300%, 0%);
+}
+
+.scrapbook {
+    width:40%;
+    transform: translate(45%,5%);
+
 }
 
 .textFrom {
