@@ -71,7 +71,7 @@
     z-index: 10;
     /*width: 40%;*/
     width:31vw;
-    transform:translate(45%, 0%);
+    transform:translate(-50%, 50%);
 }
 
 .phone {
@@ -81,7 +81,7 @@
 .texting {
     z-index: 39;
     width: 50vw;
-    transform:translate(35%, 0%);
+    transform:translate(-20%, 350%);
     padding-bottom: 3%;
 }
 
@@ -89,35 +89,35 @@
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(230%,-300%);
+    transform: translate(260%,-300%);
 }
 
 .textFromMomtoFriend2 {
     z-index: 40;
     font-size: 2.05vw;
     position: absolute;
-    transform: translate(75%,-135%);
+    transform: translate(75%,-70%);
 }
 
 .textFromMomtoFriend3 {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(185%,-200%);
+    transform: translate(215%,100%);
 }
 
 .textFromMomtoFriend4 {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(185%,-180%);
+    transform: translate(215%,90%);
 }
 
 .sendText {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(85%,40%);
+    transform: translate(95%,840%);
 }
 
 .textTo {
@@ -125,14 +125,21 @@
     width:30vw;
     padding-bottom: 5%;
     padding-top: 5%;
-    transform:translate(150%, 0%);
+    transform:translate(175%, 0%);
 }
 
 .textTo2 {
     z-index: 10;
     width:30vw;
     padding-bottom: 3%;
-    transform:translate(150%, 0%);
+    transform:translate(-27%, 140%);
+}
+
+.textTo3 {
+    z-index: 10;
+    width:30vw;
+    padding-bottom: 3%;
+    transform:translate(175%, 135%);
 }
 
 .typedIntro {

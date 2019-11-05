@@ -5,6 +5,8 @@ import Right from "../img/rightArrow.svg"
 import Cover from "../img/SB-Cover.svg"
 import S1 from "../img/SBPg1.svg"
 import S2 from "../img/SBPg2.svg"
+import { Redirect } from 'react-router-dom'
+
 
 class Boyfriend extends React.Component {
     constructor(props) {
@@ -49,11 +51,13 @@ class Boyfriend extends React.Component {
                 { this.state.i>0 &&
                 <img className="leftArrowBoy" onClick={this.scrapbookLeft} src={Left}></img>
                 }
-                {this.state.i < 4 &&
+                {this.state.i<3 &&
                 <img className="rightArrowBoy" onClick={this.scrapbookRight} src={Right}></img>
                 }
             <img className="scrapbook" src={scrapbook[this.state.i]}></img>
-
+                {this.state.i>2 &&
+                    <Redirect to="/textMomtoFriend"/>
+                }
             </div>
         )
     }
