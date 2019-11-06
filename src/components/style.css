@@ -96,7 +96,7 @@
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(260%,-300%);
+    transform: translate(280%,-300%);
 }
 
 .textFromMomtoFriend2 {
@@ -124,35 +124,35 @@
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(285%,-300%);
+    transform: translate(270%,-300%);
 }
 
 .textErictoFriend2 {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(80%,-50%);
+    transform: translate(75%,-50%);
 }
 
 .textErictoFriend3 {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(220%,85%);
+    transform: translate(217%,70%);
 }
 
 .textErictoFriend4 {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(225%,110%);
+    transform: translate(210%,95%);
 }
 
 .textErictoFriend5 {
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(225%,320%);
+    transform: translate(210%,290%);
 }
 
 .sendText {
@@ -166,7 +166,7 @@
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
-    transform: translate(105%,1610%);
+    transform: translate(105%,1400%);
 }
 
 h1 {

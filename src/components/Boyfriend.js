@@ -52,11 +52,11 @@ class Boyfriend extends React.Component {
                 { this.state.i>0 &&
                 <img className="leftArrowBoy" onClick={this.scrapbookLeft} src={Left}></img>
                 }
-                {this.state.i<3 &&
+                {this.state.i<4 &&
                 <img className="rightArrowBoy" onClick={this.scrapbookRight} src={Right}></img>
                 }
             <img className="scrapbook" src={scrapbook[this.state.i]}></img>
-                {this.state.i>2 &&
+                {this.state.i>3 &&
                     <Redirect to="/textErictoFriend"/>
                 }
             </div>

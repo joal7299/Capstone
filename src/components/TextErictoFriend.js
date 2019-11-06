@@ -42,7 +42,7 @@ class TextMomtoBoyfriend extends React.Component {
                     <TextBox className="textingErictoFriend"/>
                     </Delay>
                     <Delay wait={22000}>
-                        <Redirect to="/End"/>
+                        <Redirect to="/friend"/>
                     </Delay>
 
 
