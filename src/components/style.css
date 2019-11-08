@@ -475,7 +475,9 @@ h1 {
 .musicInstruct {
     position: absolute;
     top: 25vh;
-    left: 20vw;
+    left: 30vw;
+    color: red;
+    font-size: 1.1vw;
 }
 
 

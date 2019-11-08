@@ -27,7 +27,7 @@ class Friend extends React.Component {
     }
 
     song = ()=> {
-        this.setState({top: (Math.floor(Math.random()*(window.screen.availHeight-300))), clicks: 1, left: Math.floor(Math.random()*(window.screen.availWidth-800))});
+        this.setState({top: (Math.floor(Math.random()*(window.screen-50))), clicks: 1, left: Math.floor(Math.random()*(window.screen.availWidth-100))});
         console.log(this.state.left);
         if(this.state.playbackrate<1.5) {
             this.setState({playbackrate: this.state.playbackrate+.1});
