@@ -49,6 +49,7 @@
 }
 
 .typedRoomSteph {
+
     font-size: 1.8vw;
     color:black;
 }
@@ -75,8 +76,18 @@
 .textFrom {
     z-index: 10;
     /*width: 40%;*/
+    position: absolute;
+    font-size: 1.8vw;
+    top: 30%;
+    left: 20%;
     width:31vw;
-    transform:translate(-50%, 50%);
+    /* transform:translate(-50%, 50%); */
+}
+
+.recievedText{
+    position: absolute;
+    top: 20%;
+    left: 20%;
 }
 
 .phone {
@@ -93,8 +104,11 @@
 .textingErictoFriend{
     z-index: 39;
     width: 50vw;
-    transform:translate(50%, 420%);
-    padding-bottom: 3%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* transform:translate(50%, 420%); */
+    /* padding-bottom: 3%; */
 }
 
 .textFromMomtoFriend {
@@ -168,10 +182,16 @@
 }
 
 .sendTextEric {
-    z-index: 40;
-    font-size: 2.1vw;
+    z-index: 38;
+    /* font-size: 2.1vw; */
     position: absolute;
-    transform: translate(105%,1400%);
+    top: 150%;
+    left: 25%;
+    /* transform: translate(105%,1400%); */
+}
+
+.textField{
+    z-index: 100;
 }
 
 h1 {
@@ -183,31 +203,54 @@ h1 {
 }
 .textTo {
     z-index: 10;
+    position: absolute;
+    font-size: 2.1vw;
     width:30vw;
-    padding-bottom: 5%;
+    top: 5%;
+    left: 50%;
+    /* padding-bottom: 5%;
     padding-top: 5%;
-    transform:translate(175%, 0%);
+    transform:translate(175%, 0%); */
 }
+
+.sentText{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
 
 .textTo2 {
     z-index: 10;
     width:30vw;
-    padding-bottom: 3%;
-    transform:translate(-27%, 140%);
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* padding-bottom: 3%;
+    transform:translate(-27%, 140%); */
 }
 
 .textTo3 {
     z-index: 10;
     width:30vw;
-    padding-bottom: 3%;
-    transform:translate(175%, 135%);
+    font-size: 2vw;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    /* padding-bottom: 3%;
+    transform:translate(175%, 135%); */
 }
 
 .textTo4 {
     z-index: 10;
     width:30vw;
-    padding-bottom: 3%;
-    transform:translate(75%, 230%);
+    font-size: 2vw;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    /* padding-bottom: 3%;
+    transform:translate(75%, 230%); */
 }
 
 .typedIntro {

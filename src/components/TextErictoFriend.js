@@ -18,32 +18,62 @@ class TextMomtoBoyfriend extends React.Component {
     render() {
         return (
             <div>
-                    <TextTo className="textTo"></TextTo>
+                    <div className="textTo">
+                        <TextTo ></TextTo>
                     {/*<p className="textFromMomtoFriend">Hey Jess, hope you're<br></br> hanging in there.</p>*/}
-                    <p className="textErictoFriend1">Hi Kelly! How<br></br> have you been doing?</p>
+                        <p className="sentText">Hi Kelly! How<br></br> have you been doing?</p>
+                    </div>   
+
+
+
                     <Delay wait={3000}>
-                        <TextFrom className="textFrom"></TextFrom>
-                        <p className="textErictoFriend2">Hey Eric. I've been better.<br></br> I just feel weird without her.<br></br> Everything keeps <br></br> reminding me of her</p>
+                        <div className="textFrom">
+                            <TextFrom ></TextFrom>
+                            <p className="recievedText">Hey Eric. I've been better.<br></br> I just feel weird without her.<br></br> Everything keeps <br></br> reminding me of her</p>
+                        </div>
                     </Delay>
+
+
+
                     <Delay wait={6000}>
-                        <TextTo className="textTo2"></TextTo>
-                        <p className="textErictoFriend3">I know what you mean.<br></br> Mrs. Walker gave me a <br></br> scrapbook Steph had made <br></br>for me.</p>
+                        <div className="textTo2">
+                            <TextTo></TextTo>
+                            <p className="sentText">I know what you mean.<br></br> Mrs. Walker gave me a <br></br> scrapbook Steph had made <br></br>for me.</p>
+                        </div>
                     </Delay>
+
+
+
                     <Delay wait={9000}>
-                        <TextTo className="textTo3"></TextTo>
-                        <p className="textErictoFriend4">It was tough to get through <br></br> but after I read it<br></br>I realized something </p>
+                        <div className="textTo3">
+                            <TextTo></TextTo>
+                            <p className="sentText">It was tough to get through <br></br> but after I read it<br></br>I realized something </p>
+                        </div>
                     </Delay>
+
+
+
                     <Delay wait={12000}>
-                        <TextTo className="textTo4"></TextTo>
-                        <p className="textErictoFriend5">It's a piece of her that's <br></br> still her with us.<br></br>And I'm so grateful for that. </p>
+                        <div className="textTo4">
+                            <TextTo></TextTo>
+                            <p className="sentText">It's a piece of her that's <br></br> still her with us.<br></br>And I'm so grateful for that. </p>
+                        </div>
                     </Delay>
+
+
+
                     <Delay wait={15000}>
-                    <p className="sendTextEric">Thanks Eric! That helps a lot.</p>
-                    <TextBox className="textingErictoFriend"/>
+                        <div className="sendTextEric">
+                            <p className="textField">Thanks Eric! That helps a lot.</p>
+                            <TextBox className="textingErictoFriend"/>
+                        </div>
                     </Delay>
-                    <Delay wait={22000}>
+
+
+
+                    {/* <Delay wait={20000}>
                         <Redirect to="/friend"/>
-                    </Delay>
+                    </Delay> */}
 
 
             </div>

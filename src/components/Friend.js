@@ -40,13 +40,11 @@ class Friend extends React.Component {
         }
     }
 
-
     render() {
         const notes = [Note1, Note2, Note3];
         let top = this.state.top;
         let left = this.state.left;
         let opacity = this.state.opacity;
-        console.log(top);
         return (
             <div>
                 <div className="typedSteph">
@@ -66,7 +64,7 @@ class Friend extends React.Component {
                 {this.state.visible == false &&
                     <Redirect to="/end"/>
                 }
-                </div>
+            </div>
         )
     }
 }
