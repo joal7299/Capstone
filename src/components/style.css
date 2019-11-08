@@ -472,5 +472,12 @@ h1 {
     position: absolute;
 }
 
+.musicInstruct {
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+}
+
+
 
 

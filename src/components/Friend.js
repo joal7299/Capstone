@@ -20,13 +20,14 @@ class Friend extends React.Component {
             visible: true,
             complete: false,
             opacity:.4,
+            clicks: 0,
         }
         this.audio = new Audio(Lizzo);
         this.song = this.song.bind(this);
     }
 
     song = ()=> {
-        this.setState({top: (Math.floor(Math.random()*(window.screen.availHeight-300))), left: Math.floor(Math.random()*(window.screen.availWidth-800))});
+        this.setState({top: (Math.floor(Math.random()*(window.screen.availHeight-300))), clicks: 1, left: Math.floor(Math.random()*(window.screen.availWidth-800))});
         console.log(this.state.left);
         if(this.state.playbackrate<1.5) {
             this.setState({playbackrate: this.state.playbackrate+.1});
@@ -61,6 +62,11 @@ class Friend extends React.Component {
                         <img className="note" style={{position: "absolute", top: top, left: left}} onClick={this.song} src={notes[Math.floor(Math.random()*notes.length)]} ></img>
                     </div>
                         }
+                    {this.state.clicks==0 &&
+                    <div className="musicInstruct">
+                        <p>Click the notes to speed up the song and brighten Kelly's day.</p>
+                    </div>
+                    }
                         <Bus style={{opacity: opacity, zIndex: 25}}></Bus>
                 </div>
                 {this.state.visible == false &&
