@@ -36,11 +36,16 @@
     z-index: 50;
     transform: translate(30%, 0%);
     padding:1vw;
+    /* position:absolute; */
 }
 
 .typedFuneralSteph {
     font-size: 1.8vw;
     color:white;
+}
+
+.funeral{
+    overflow: hidden;
 }
 
 .typedRoomSteph {

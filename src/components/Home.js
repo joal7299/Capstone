@@ -43,7 +43,7 @@ class Home extends React.Component {
     render() {
         var color = document.body.style.backgroundColor = "black";
         return (
-            <div>
+            <div className="funeral">
                 { this.state.momTalk==true && this.state.momLin==0 &&
                     <div className="typedMom">
                         <Typed className="typedFuneralMom" strings={['Thanks so much for coming today',"It means a lot to me and I'm sure it would mean a lot to Stephanie"]}
