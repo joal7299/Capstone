@@ -8,7 +8,9 @@
 }
 
 .typedMom {
-    transform:translate(55%, 320%);
+    position: absolute;
+    top: 5vh;
+    left: 50vw;
     z-index: 50;
 }
 
@@ -18,7 +20,9 @@
 }
 
 .typedFriend {
-    transform:translate(40%, 320%);
+    position: absolute;
+    top:5vh;
+    left: 40vw;
     z-index: 50;
 }
 
@@ -28,24 +32,27 @@
 }
 
 .typedBoy {
-    transform:translate(10%, 320%);
+    position: absolute;
+    top:5vh;
+    left: 20vw;
     z-index: 50;
 }
 
 .typedSteph {
     z-index: 50;
-    transform: translate(30%, 0%);
-    padding:1vw;
-    /* position:absolute; */
+    left:30vw;
+     position:absolute;
 }
 
 .typedFuneralSteph {
     font-size: 1.8vw;
-    color:white;
+    color:black;
+
 }
 
 .funeral{
     overflow: hidden;
+    /*padding-top:1vw;*/
 }
 
 .typedRoomSteph {
@@ -240,76 +247,6 @@ h1 {
 /*}*/
 .confine {
     position: relative;
-}
-
-.textBubbleGrey1 {
-    z-index: 20;
-    transform: translate(90%,160%);
-    width: 20%;
-    position: absolute;
-}
-
-.textHomeGrey1 {
-    z-index: 20;
-    font-size: 1.4vw;
-    position: absolute;
-    transform: translate(135%,240%);
-}
-
-.textBubbleGrey2 {
-    z-index: 20;
-    transform: translate(145%,110%);
-    width: 20%;
-    position: absolute;
-}
-
-.textHomeGrey2 {
-    z-index: 20;
-    font-size: 1.4vw;
-    position: absolute;
-    transform: translate(172%,180%);
-}
-
-.textBubbleGrey3 {
-    z-index: 20;
-    transform: translate(215%,110%);
-    width: 20%;
-    position: absolute;
-}
-
-.textHomeGrey3 {
-    z-index: 20;
-    font-size: 1.4vw;
-    position: absolute;
-    transform: translate(270%,170%);
-}
-
-.textBubbleGrey4 {
-    z-index: 20;
-    transform: translate(285%,100%);
-    width: 20%;
-    position: absolute;
-}
-
-.textHomeGrey4 {
-    z-index: 20;
-    font-size: 1.4vw;
-    position: absolute;
-    transform: translate(370%,165%);
-}
-
-.textBubbleGrey5 {
-    z-index: 20;
-    transform: translate(355%,100%);
-    width: 20%;
-    position: absolute;
-}
-
-.textHomeGrey5 {
-    z-index: 20;
-    font-size: 1.4vw;
-    position: absolute;
-    transform: translate(475%,160%);
 }
 
 .gravestone {
@@ -528,12 +465,6 @@ h1 {
     /* width: 5%; */
     position: absolute;
 }
-
-/* .note{
-    transform: translate(50%,10%);
-    width: 50%;
-    position: absolute;
-} */
 
 .noteInstructions{
     transform: translate(75%,30%);

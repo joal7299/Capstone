@@ -98,8 +98,7 @@ class Home extends React.Component {
                     />
                 </div>
                 }
-
-                < Boyfriend className={this.state.boyTalk ? "grey2" : "grey2O"}/>
+                <Boyfriend className={this.state.boyTalk ? "grey2" : "grey2O"}/>
                 <Friend className={this.state.friendTalk ? "grey3" : "grey3O"}/>
                 <Mom className={this.state.momTalk ? "grey4" : "grey4O"}/>
                 <Gravestone className="gravestone"/>

@@ -20,7 +20,7 @@ class Parent extends React.Component {
         return (
             <div>
                 <div className="typedSteph">
-                    <Typed className="typedRoomSteph" strings={["this is my room.","what's my mom doing here?","she must be going through my old stuff", "my treasure chest!","I have stuff inside I wish my mom could see","it would help her understand some things"]}
+                    <Typed className="typedRoomSteph" strings={["this is my room.","what's my mom doing here?","she must be going through my old stuff", "look! it's my treasure chest under my bed.","I have stuff inside I wish my mom could see","it would help her understand some things"]}
                            fadeOut={true}
                            typeSpeed={35}
                     />
