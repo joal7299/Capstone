@@ -3,6 +3,7 @@ import Hover from "./Hover.js"
 import {ReactComponent as Box} from '../img/box.svg'
 import {ReactComponent as Back} from "../img/leftArrow.svg"
 import {ReactComponent as Note} from "../img/letter-1.svg"
+import Typed from "react-typed";
 
 
 class Bed extends React.Component {
@@ -37,7 +38,13 @@ class Bed extends React.Component {
     render() {
         return (
             <div>
-                <h1 className="noteInstructions">Enter a 3-digit code</h1>
+                <div className="typedSteph">
+                    <Typed className="typedRoomSteph" strings={["that's my chest!","it has a 3 letter code though.","try and look around my room to find the code"]}
+                           fadeOut={true}
+                           typeSpeed={35}
+                    />
+                </div>
+                {/*<h1 className="noteInstructions">Enter a 3-digit code</h1>*/}
                 <Hover noHoverSvg={<Back className="Back"/>} hoverSvg={<Back onClick={()=> window.location.href="Parent"} className="Back"/>}/>
 
                 <Box className = "box"/>

@@ -41,7 +41,8 @@
 .typedSteph {
     z-index: 50;
     left:30vw;
-     position:absolute;
+    position:absolute;
+    padding: 1vh;
 }
 
 .typedFuneralSteph {
@@ -463,12 +464,6 @@ h1 {
 .password3 {
     transform: translate(50%,3000%);
     /* width: 5%; */
-    position: absolute;
-}
-
-.noteInstructions{
-    transform: translate(75%,30%);
-    width: 50%;
     position: absolute;
 }
 
