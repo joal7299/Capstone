@@ -9,7 +9,7 @@ class Desk extends React.Component {
         return (
             <div>
                 <div className="typedSteph">
-                    <Typed className="typedRoomSteph" strings={[""]}
+                    <Typed className="typedRoomSteph" strings={["looks like the key to a code"]}
                            fadeOut={true}
                            typeSpeed={35}
                     />

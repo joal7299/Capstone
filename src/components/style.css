@@ -40,7 +40,7 @@
 
 .typedSteph {
     z-index: 50;
-    left:30vw;
+    left:35vw;
     position:absolute;
     padding: 1vh;
 }
@@ -76,6 +76,7 @@
 
 .scrapbook {
     width:40%;
+    padding-top: 5vw;
     transform: translate(45%,5%);
 
 }
@@ -234,6 +235,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding-top:3vw;
 }
 
 .typed {
@@ -407,7 +409,8 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 45%;
+    padding-top: 5vw;
     /* width: 50%;
     transform: translate(10%, 70%);
     text-align: center; */
@@ -449,6 +452,7 @@ h1 {
     transform: translate(2%,2%);
     width: 5%;
     position: absolute;
+    cursor: pointer;
 }
 
 .password1 {
