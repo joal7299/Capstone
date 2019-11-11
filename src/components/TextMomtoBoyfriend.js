@@ -32,13 +32,8 @@ class TextMomtoBoyfriend extends React.Component {
                     </Delay>
                     <Delay wait={11000}>
                     <p className="sendText">Thanks, I'll come pick it up.</p>
-                    <TextBox className="texting"/>
+                    <TextBox  onClick={()=> window.location.href="Boyfriend"} className="texting"/>
                     </Delay>
-                    <Delay wait={14000}>
-                        <Redirect to="/boyfriend"/>
-                    </Delay>
-
-
             </div>
         )
     }

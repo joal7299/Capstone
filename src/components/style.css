@@ -97,6 +97,7 @@
     width: 50vw;
     transform:translate(-20%, 350%);
     padding-bottom: 3%;
+    cursor: pointer;
 }
 
 .textingErictoFriend{
@@ -104,6 +105,7 @@
     width: 50vw;
     transform:translate(50%, 420%);
     padding-bottom: 3%;
+    cursor: pointer;
 }
 
 .textFromMomtoFriend {
