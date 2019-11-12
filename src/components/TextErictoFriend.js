@@ -66,6 +66,7 @@ class TextMomtoBoyfriend extends React.Component {
                         <div className="sendTextEric">
                             <p className="textField">Thanks Eric! That helps a lot.</p>
                             <TextBox className="textingErictoFriend"/>
+
                         </div>
                     </Delay>
 
