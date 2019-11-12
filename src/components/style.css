@@ -226,6 +226,12 @@ h1 {
     text-align: center;
     transform:translate(20%, 500%);
 }
+
+.typedEnd {
+    font-size: 3em;
+    text-align: center;
+    /*transform:translate(50%, 500%);*/
+}
 .note {
     height: 10%;
     cursor: pointer;
@@ -241,7 +247,7 @@ h1 {
 }
 
 .typed {
-    transform:translate(15%, 200%);
+    transform:translate(5%, 200%);
     z-index: 30;
     background-color: black;
     color:white;
