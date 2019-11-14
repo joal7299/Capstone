@@ -19,18 +19,18 @@ class Parent extends React.Component {
 
         return (
             <div>
+            <div className="stephanieBackground">
                 <div className="typedSteph">
-                    <Typed className="typedRoomSteph" strings={["this is my room.","what's my mom doing here?","she must be going through my old stuff", "look! it's my treasure chest under my bed.","I have stuff inside I wish my mom could see","it would help her understand some things", "interact with objects in my room to unlock the chest"]}
+                    <Typed className="typedRoomSteph" strings={["this is my room.","what's my mom doing here?","she must be going through my old stuff", "look! it's my treasure chest under my bed.","I have stuff inside I wish my mom could see","it would help her understand some things", "maybe I can help her look around my room for the code to unlock my chest"]}
                            fadeOut={true}
                            typeSpeed={35}
                     />
                 </div>
+            </div>
                 <Hover noHoverSvg={<Bed className="Bed"/>} hoverSvg={<Bed cursor="pointer" onClick={()=> window.location.href="Bed"} className="Bed"/>}/>
                 <Hover noHoverSvg={<Desk className="Desk"/>} hoverSvg={<Desk cursor="pointer" onClick={()=> window.location.href="Desk"} className="Desk"/>}/>
                 <Hover noHoverSvg={<Trash className="Trash"/>} hoverSvg={<Trash cursor="pointer" onClick={()=> window.location.href="Trash"} className="Trash"/>}/>
                 {/* <Room /> */}
-                
-                
             </div>
 
         );

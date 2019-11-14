@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
 * {
     margin:0;
     padding: 0;
@@ -40,14 +42,16 @@
 
 .typedSteph {
     z-index: 50;
-    left:35vw;
+    left:25vw;
     position:absolute;
     padding: 1vh;
 }
 
+
 .typedFuneralSteph {
     font-size: 1.8vw;
     color:black;
+    font-family: 'Source Code Pro', monospace;
 
 }
 
@@ -59,6 +63,7 @@
 .typedRoomSteph {
     font-size: 1.8vw;
     color:black;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .leftArrowBoy {
@@ -137,6 +142,7 @@
 }
 
 .textErictoFriend1 {
+    color: white;
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
@@ -151,6 +157,7 @@
 }
 
 .textErictoFriend3 {
+    color:white;
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
@@ -158,6 +165,7 @@
 }
 
 .textErictoFriend4 {
+    color:white;
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
@@ -165,6 +173,7 @@
 }
 
 .textErictoFriend5 {
+    color:white;
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
@@ -193,6 +202,7 @@ h1 {
     text-align: center;
 }
 .textTo {
+    color:white;
     z-index: 10;
     width:30vw;
     padding-bottom: 5%;
@@ -208,6 +218,7 @@ h1 {
 }
 
 .textTo3 {
+    color:white;
     z-index: 10;
     width:30vw;
     padding-bottom: 3%;
@@ -215,6 +226,7 @@ h1 {
 }
 
 .textTo4 {
+    color:white;
     z-index: 10;
     width:30vw;
     padding-bottom: 3%;
@@ -222,14 +234,16 @@ h1 {
 }
 
 .typedIntro {
-    font-size: 3em;
+    font-size: 2.5em;
+    font-family: 'Source Code Pro', monospace;
     text-align: center;
     transform:translate(20%, 500%);
 }
 
 .typedEnd {
-    font-size: 3em;
+    font-size: 2.3em;
     text-align: center;
+    font-family: 'Source Code Pro', monospace;
     /*transform:translate(50%, 500%);*/
 }
 .note {
@@ -238,12 +252,23 @@ h1 {
     z-index: 50;
 }
 .noteMom {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    position: absolute;
+    left: 30vw;
+    top:15vw;
+    z-index: 10;
+    width: 35%;
     padding-top:3vw;
+}
+
+.hiddenScrapbook {
+    z-index:0;
+    width: 73%;
+    position: absolute;
+    left: 38vw;
+    top: 20vw;
+    transform: rotate(25deg);
+    cursor: pointer;
+
 }
 
 .typed {

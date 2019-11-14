@@ -118,7 +118,7 @@ class Home extends React.Component {
                 }
                 {this.state.stephTalk==true && this.state.stephLin==1 &&
                 <div className="typedSteph">
-                    <Typed className="typedFuneralSteph" strings={["why are you talking about me like I'm.. dead."]}
+                    <Typed className="typedFuneralSteph" strings={["why are you talking about me like I'm.. dead?"]}
                            fadeOut={true}
                            typeSpeed={35} onComplete={() => {
                         setTimeout(function () {

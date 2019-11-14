@@ -16,26 +16,27 @@ import End from './components/End';
 import Credits from "./components/Credits"
 import TextMomtoBoyfriend from "./components/TextMomtoBoyfriend";
 import TextErictofriend from "./components/TextErictoFriend";
-
-
+import ParentFinished from "./components/ParentFinished";
+import PageShell from "./PageShell";
 
 const routing = (
     <Router>
         <div>
-            <Route exact path="/" component={App}/>
-            <Route path="/home" component={Home}/>
-            <Route path="/parent" component={Parent}/>
-            <Route path="/friend" component={Friend}/>
-            <Route path="/boyfriend" component={Boyfriend}/>
-            <Route path="/bed" component={Bed}/>
-            <Route path="/desk" component={Desk}/>
-            <Route path="/trash" component={Trash}/>
-            <Route path="/note" component={Note}/>
-            <Route path="/musicGame" component={Music}/>
-            <Route path="/textMomtoBoyfriend" component={TextMomtoBoyfriend}/>
-            <Route path="/textErictofriend" component={TextErictofriend}/>
-            <Route path="/end" component={End}/>
-            <Route path="/credits" component={Credits}/>
+            <Route exact path="/" exact component={PageShell(App)}/>
+            <Route path="/home" exact component={PageShell(Home)}/>
+            <Route path="/parent" exact component={PageShell(Parent)}/>
+            <Route path="/parentfinished" exact component={PageShell(ParentFinished)}/>
+            <Route path="/friend" exact component={PageShell(Friend)}/>
+            <Route path="/boyfriend" exact component={PageShell(Boyfriend)}/>
+            <Route path="/bed" exact component={PageShell(Bed)}/>
+            <Route path="/desk" exact component={PageShell(Desk)}/>
+            <Route path="/trash" exact component={PageShell(Trash)}/>
+            <Route path="/note" exact component={PageShell(Note)}/>
+            <Route path="/musicGame" exact component={PageShell(Music)}/>
+            <Route path="/textMomtoBoyfriend" exact component={PageShell(TextMomtoBoyfriend)}/>
+            <Route path="/textErictofriend" exact component={PageShell(TextErictofriend)}/>
+            <Route path="/end" exact component={PageShell(End)}/>
+            <Route path="/credits" exact component={PageShell(Credits)}/>
 
 
         </div>
