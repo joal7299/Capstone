@@ -41,14 +41,14 @@ class Boyfriend extends React.Component {
                            typeSpeed={35}
                     />
                 </div>
-                {this.state.complete==true &&
-                    <div className="typedSteph">
-                        <Typed className="typedRoomSteph" strings={["oh good, I'm glad my mom gave Eric that scrapbook.","I was hoping I could give him that myself.","I hope he can read it and maybe get a little closure.", "I really did love him so much."]}
-                               fadeOut={true}
-                               typeSpeed={35}
-                        />
-                    </div>
-                    }
+                {/*{this.state.complete==true &&*/}
+                {/*    <div className="typedSteph">*/}
+                {/*        <Typed className="typedRoomSteph" strings={["oh good, I'm glad my mom gave Eric that scrapbook.","I was hoping I could give him that myself.","I hope he can read it and maybe get a little closure.", "I really did love him so much."]}*/}
+                {/*               fadeOut={true}*/}
+                {/*               typeSpeed={35}*/}
+                {/*        />*/}
+                {/*    </div>*/}
+                {/*    }*/}
                 { this.state.i>0 &&
                 <img className="leftArrowBoy" onClick={this.scrapbookLeft} src={Left}></img>
                 }
