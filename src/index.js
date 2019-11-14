@@ -33,7 +33,7 @@ const routing = (
             <Route path="/note" component={Note}/>
             <Route path="/musicGame" component={Music}/>
             <Route path="/textMomtoBoyfriend" component={TextMomtoBoyfriend}/>
-            <Route path="/textErictofriend" component={TextErictofriend}/>
+            <Route path="#/textErictofriend" component={TextErictofriend}/>
             <Route path="/end" component={End}/>
             <Route path="/credits" component={Credits}/>
 
