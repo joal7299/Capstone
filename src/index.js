@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
-import { Router, Route } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App';
 import Home from './components/Home';
@@ -23,10 +23,10 @@ import ParentFinished from "./components/ParentFinished";
 const routing = (
     <Router>
         <div>
-            <Route path="/" component={App}/>
+            <Route exact path="/" component={App}/>
             <Route path="/home" component={Home}/>
             <Route path="/parent" component={Parent}/>
-            <Route path="parentfinished" component={ParentFinished}/>
+            <Route path="/parentFinished" component={ParentFinished}/>
             <Route path="/friend" component={Friend}/>
             <Route path="/boyfriend" component={Boyfriend}/>
             <Route path="/bed" component={Bed}/>

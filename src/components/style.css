@@ -16,6 +16,13 @@
     z-index: 50;
 }
 
+.momAlone {
+    width: 13vw;
+    z-index: 40;
+    positon: absolute;
+    transform: translate(366%, 20%);
+}
+
 .typedFuneralFriend {
     font-size: 1.5vw;
     color: #7E7126;
