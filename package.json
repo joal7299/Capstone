@@ -3,6 +3,10 @@
   "name": "capstone-project",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.9.0",
+    "node":"10.15.3"
+  },
   "dependencies": {
     "@material-ui/core": "^4.4.0",
     "animate.css": "^3.7.2",
@@ -29,9 +33,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

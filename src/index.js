@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
+
 import App from './App';
 import Home from './components/Home';
 import Parent from './components/Parent';
@@ -21,10 +23,10 @@ import ParentFinished from "./components/ParentFinished";
 const routing = (
     <Router>
         <div>
-            <Route exact path="/" component={App}/>
+            <Route path="/" component={App}/>
             <Route path="/home" component={Home}/>
             <Route path="/parent" component={Parent}/>
-            <Route path="/parentfinished" component={ParentFinished}/>
+            <Route path="parentfinished" component={ParentFinished}/>
             <Route path="/friend" component={Friend}/>
             <Route path="/boyfriend" component={Boyfriend}/>
             <Route path="/bed" component={Bed}/>
@@ -33,11 +35,9 @@ const routing = (
             <Route path="/note" component={Note}/>
             <Route path="/musicGame" component={Music}/>
             <Route path="/textMomtoBoyfriend" component={TextMomtoBoyfriend}/>
-            <Route path="#/textErictofriend" component={TextErictofriend}/>
+            <Route path="/textErictofriend" component={TextErictofriend}/>
             <Route path="/end" component={End}/>
             <Route path="/credits" component={Credits}/>
-
-
         </div>
     </Router>
 )
