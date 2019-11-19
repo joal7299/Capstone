@@ -128,6 +128,7 @@
 
 .textFromMomtoFriend {
     z-index: 40;
+    color:white;
     font-size: 2.1vw;
     position: absolute;
     transform: translate(280%,-300%);
@@ -142,12 +143,14 @@
 
 .textFromMomtoFriend3 {
     z-index: 40;
+    color:white;
     font-size: 2.1vw;
     position: absolute;
     transform: translate(215%,100%);
 }
 
 .textFromMomtoFriend4 {
+    color:white;
     z-index: 40;
     font-size: 2.1vw;
     position: absolute;
