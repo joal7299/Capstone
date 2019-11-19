@@ -9,6 +9,7 @@ import {ReactComponent as Mom} from "../img/mom.svg"
 import Typed from 'react-typed'
 import "animate.css/animate.min.css"
 import { Redirect } from 'react-router-dom'
+import Delay from "react-delay"
 
 import ScrollAnimation from "react-animate-on-scroll"
 
@@ -34,19 +35,29 @@ class Home extends React.Component {
             friendLin:0,
             stephTalk: true,
             stephLin:0,
-            complete:false
+            complete:false,
+            transparent: false,
             // mom: {talking: true, linNum: 0},
             // boyfriend: {talking: false, linNum: 0},
             // friend: {talking: false, linNum:0}
         };
     }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ transparent: true }), 10);
+    }
+
     render() {
         var color = document.body.style.backgroundColor = "black";
         return (
             <div className="funeral">
+                <div id="fadeIn" className={`fade ${this.state.transparent ? 'transparent' : ''}`}>
+                {/* transparent background div */}
+                </div>
+            
                 { this.state.momTalk==true && this.state.momLin==0 &&
                     <div className="typedMom">
-                        <Typed className="typedFuneralMom" strings={['Thanks so much for coming today',"It means a lot to me and I'm sure it would mean a lot to Stephanie"]}
+                        <Typed className="typedFuneralMom" strings={['Thanks so much for coming today Kelly and Eric',"It means a lot to me and I'm sure it would mean a lot to Stephanie", "I know these past few days have been hard after the...", "accident.", "I guess I just want say a few things that have been weighing on my mind."]}
                                fadeOut={true}
                                typeSpeed={35} onComplete={() => {
                             setTimeout(function () {
@@ -57,10 +68,10 @@ class Home extends React.Component {
                         />
                     </div>
                 }
-
+            
                 { this.state.momTalk==true && this.state.momLin==1 &&
                 <div className="typedMom">
-                    <Typed className="typedFuneralMom" strings={["Stephanie meant everything to me."," After her father died she was all I had"," I wanted to protect her more than anything.", " I remember when she was young,", "all she wanted to do was become a rock climber.","I told her no, that it was too dangerous."," I wish I would have let her and not been so concerned.", " I regret not letting her make her own choices,"," I just held her back from doing what she wanted most."]}
+                    <Typed className="typedFuneralMom" strings={["Stephanie meant everything to me."," After her father died she was all I had"," I wanted to protect her more than anything.", " I remember when she was young,", "all she wanted to do was become a rock climber.","I told her no, that it was too dangerous."," I wish I would have let her and not been so concerned.", " I regret not letting her make her own choices,"," I just fell I held her back from the things she wanted to do most."]}
                            fadeOut={true}
                            typeSpeed={35} onComplete={() => {
                         setTimeout(function () {
@@ -103,9 +114,10 @@ class Home extends React.Component {
                 <Mom className={this.state.momTalk ? "grey4" : "grey4O"}/>
                 <Gravestone className="gravestone"/>
 
+            <Delay wait={1500}>
                 {this.state.stephTalk==true && this.state.stephLin==0 &&
                 <div className="typedSteph">
-                    <Typed className="typedFuneralSteph" strings={["who are these people?", "Mom! Eric! Kelly!", "Hello?!  can anyone hear me?"]}
+                    <Typed className="typedFuneralSteph" strings={["Who are these people?", "Mom! Eric! Kelly!", "Hello?!  can anyone hear me?"]}
                            fadeOut={true}
                            typeSpeed={35} onComplete={() => {
                         setTimeout(function () {
@@ -116,6 +128,7 @@ class Home extends React.Component {
                     />
                 </div>
                 }
+            </Delay>
                 {this.state.stephTalk==true && this.state.stephLin==1 &&
                 <div className="typedSteph">
                     <Typed className="typedFuneralSteph" strings={["why are you talking about me like I'm... dead."]}

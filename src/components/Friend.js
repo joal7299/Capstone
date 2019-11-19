@@ -6,6 +6,7 @@ import Note3 from "../img/note3-1.svg"
 import {ReactComponent as Bus} from "../img/Bus-Scene.svg"
 import { Redirect } from 'react-router-dom'
 import Typed from "react-typed";
+import Delay from "react-delay"
 
 
 class Friend extends React.Component {
@@ -21,9 +22,18 @@ class Friend extends React.Component {
             complete: false,
             opacity:.4,
             clicks: 0,
+            half: false,
+            full: false,
+            end: false,
+            line: 0,
+            transparent: false,
         }
         this.audio = new Audio(Lizzo);
         this.song = this.song.bind(this);
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ transparent: true }), 10);
     }
 
     song = ()=> {
@@ -36,8 +46,11 @@ class Friend extends React.Component {
             this.setState({opacity: this.state.opacity+.075});
 
         }
+        if(this.state.playbackrate==.5) {
+            this.setState({half: true});
+        }
         if(this.state.playbackrate>1) {
-            this.setState({visible: false});
+            this.setState({visible: false, full:true});
         }
     }
 
@@ -50,12 +63,53 @@ class Friend extends React.Component {
         console.log(top);
         return (
             <div>
+                <div id="fadeIn" className={`fade ${this.state.transparent ? 'transparent' : ''}`}>
+                {/* transparent background div */}
+                </div>
+
+            <Delay wait={1500}>
+                {this.state.half == false && this.state.full == false && this.state.line==0 &&
                 <div className="typedSteph">
-                    <Typed className="typedRoomSteph" strings={["oh gosh, Kelly looks really upset.","I hate to see her this way.","I wish there was some way to cheer her up."]}
+                    <Typed className="typedRoomSteph"
+                           strings={["oh gosh, Kelly looks really upset.", "I hate to see her this way.", "I wish there was some way to cheer her up."]}
                            fadeOut={true}
-                           typeSpeed={35}
+                           typeSpeed={35} onComplete={() => {
+                        setTimeout(function () {
+                                this.setState({line: 1})
+                            }.bind(this),
+                            2000)
+                    }}
                     />
                 </div>
+                }
+            </Delay>
+                {this.state.half==true &&
+                <div className="typedSteph">
+                    <Typed className="typedRoomSteph" strings={["her life seems to be regaining color a little","I just want to remind her of how much fun we had together"]}
+                           fadeOut={true}
+                           typeSpeed={35} onComplete={() => {
+                        setTimeout(function () {
+                                this.setState({half: false})
+                            }.bind(this),
+                            2000)
+                    }}
+                    />
+                </div>
+                }
+                {
+                    this.state.full ==true &&
+                    <div className="typedSteph">
+                        <Typed className="typedRoomSteph" strings={["look at that!", "Kelly finally seems to be more like herself again","I hope she feels better","and knows that she will be okay without me"]}
+                               fadeOut={true}
+                               typeSpeed={35} onComplete={() => {
+                            setTimeout(function () {
+                                    this.setState({end: true})
+                                }.bind(this),
+                                2000)
+                        }}
+                        />
+                    </div>
+                }
                 <div className="busScene">
                 {this.state.visible == true &&
                     <div>
@@ -69,7 +123,7 @@ class Friend extends React.Component {
                     }
                         <Bus style={{opacity: opacity, zIndex: 25}}></Bus>
                 </div>
-                {this.state.visible == false &&
+                {this.state.end == true &&
                     <Redirect to="/end"/>
                 }
                 </div>

@@ -11,13 +11,22 @@ class TextMomtoBoyfriend extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            text2: false
+            text2: false,
+            transparent: false,
         };
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ transparent: true }), 10);
     }
 
     render() {
         return (
             <div>
+                <div id="fadeIn" className={`fade ${this.state.transparent ? 'transparent' : ''}`}>
+                {/* transparent background div */}
+                </div>
+                
                     <TextTo className="textTo"></TextTo>
                     {/*<p className="textFromMomtoFriend">Hey Jess, hope you're<br></br> hanging in there.</p>*/}
                     <p className="textErictoFriend1">Hi Kelly! How<br></br> have you been doing?</p>

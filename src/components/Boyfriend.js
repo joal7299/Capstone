@@ -7,6 +7,7 @@ import S1 from "../img/SBPg1.svg"
 import S2 from "../img/SBPg2.svg"
 import S3 from "../img/SBPg3.svg"
 import { Redirect } from 'react-router-dom'
+import Delay from "react-delay"
 
 
 class Boyfriend extends React.Component {
@@ -14,12 +15,18 @@ class Boyfriend extends React.Component {
         super(props);
         this.state = {
             complete: false,
-            i: 0
+            i: 0,
+            transparent: false,
         }
         this.scrapbookLeft = this.scrapbookLeft.bind(this);
         this.scrapbookRight = this.scrapbookRight.bind(this);
 
     }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ transparent: true }), 10);
+    }
+
     scrapbookLeft = ()=> {
         if(this.state.i>=1) {
             this.setState({i:this.state.i-1});
@@ -35,20 +42,27 @@ class Boyfriend extends React.Component {
         const scrapbook = [Cover, S1, S2, S3];
         return (
             <div>
-                <div className="typedSteph">
-                    <Typed className="typedRoomSteph" strings={["oh good, I'm glad my mom gave Eric that scrapbook.","I was hoping I could give him that myself.","I hope he can read it and maybe get a little closure.", "I really did love him so much."]}
-                           fadeOut={true}
-                           typeSpeed={35}
-                    />
+                <div id="fadeIn" className={`fade ${this.state.transparent ? 'transparent' : ''}`}>
+                {/* transparent background div */}
                 </div>
-                {this.state.complete==true &&
+
+
+                <Delay wait={1500}>
                     <div className="typedSteph">
                         <Typed className="typedRoomSteph" strings={["oh good, I'm glad my mom gave Eric that scrapbook.","I was hoping I could give him that myself.","I hope he can read it and maybe get a little closure.", "I really did love him so much."]}
-                               fadeOut={true}
-                               typeSpeed={35}
+                            fadeOut={true}
+                            typeSpeed={35}
                         />
                     </div>
-                    }
+                </Delay>
+                {/*{this.state.complete==true &&*/}
+                {/*    <div className="typedSteph">*/}
+                {/*        <Typed className="typedRoomSteph" strings={["oh good, I'm glad my mom gave Eric that scrapbook.","I was hoping I could give him that myself.","I hope he can read it and maybe get a little closure.", "I really did love him so much."]}*/}
+                {/*               fadeOut={true}*/}
+                {/*               typeSpeed={35}*/}
+                {/*        />*/}
+                {/*    </div>*/}
+                {/*    }*/}
                 { this.state.i>0 &&
                 <img className="leftArrowBoy" onClick={this.scrapbookLeft} src={Left}></img>
                 }
