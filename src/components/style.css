@@ -111,13 +111,19 @@
     padding-bottom: 3%;
     cursor: pointer;
 }
-
+.texting:active {
+    opacity: .6;
+}
 .textingErictoFriend{
     z-index: 39;
     width: 50vw;
     transform:translate(50%, 420%);
     padding-bottom: 3%;
     cursor: pointer;
+}
+
+.textingErictoFriend:active {
+    opacity: .6;
 }
 
 .textFromMomtoFriend {
@@ -495,9 +501,12 @@ h1 {
     cursor: pointer;
 }
 
+.Back:active {
+    opacity: .6;
+}
+
 .password1 {
     transform: translate(-150%,3000%);
-    /* width: 5%; */
     position: absolute;
 }
 .password2 {
@@ -505,6 +514,7 @@ h1 {
     /* width: 5%; */
     position: absolute;
 }
+
 .password3 {
     transform: translate(50%,3000%);
     /* width: 5%; */
