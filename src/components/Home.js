@@ -34,16 +34,28 @@ class Home extends React.Component {
             friendLin:0,
             stephTalk: true,
             stephLin:0,
-            complete:false
+            complete:false,
+            transparent: false,
             // mom: {talking: true, linNum: 0},
             // boyfriend: {talking: false, linNum: 0},
             // friend: {talking: false, linNum:0}
         };
     }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ transparent: true }), 10);
+    }
+
+    
     render() {
         var color = document.body.style.backgroundColor = "black";
         return (
             <div className="funeral">
+                
+                <div id="fadeIn" className={`fade ${this.state.transparent ? 'transparent' : ''}`}>
+                {/* transparent background div */}
+                </div>
+
                 { this.state.momTalk==true && this.state.momLin==0 &&
                     <div className="typedMom">
                         <Typed className="typedFuneralMom" strings={['Thanks so much for coming today',"It means a lot to me and I'm sure it would mean a lot to Stephanie"]}
@@ -118,11 +130,7 @@ class Home extends React.Component {
                 }
                 {this.state.stephTalk==true && this.state.stephLin==1 &&
                 <div className="typedSteph">
-<<<<<<< HEAD
                     <Typed className="typedFuneralSteph" strings={["why are you talking about me like I'm... dead."]}
-=======
-                    <Typed className="typedFuneralSteph" strings={["why are you talking about me like I'm.. dead?"]}
->>>>>>> 296f0862427aed7fb27cdad14d1c78088ed6e5ec
                            fadeOut={true}
                            typeSpeed={35} onComplete={() => {
                         setTimeout(function () {
@@ -146,6 +154,7 @@ class Home extends React.Component {
                     />
                 </div>
                 }
+
                 {this.state.complete == true &&
                 <Redirect to="/parent"/>
                 }

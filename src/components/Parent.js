@@ -13,12 +13,26 @@ import {ReactComponent as Room} from "../img/RoomScene.svg"
 
 
 class Parent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            transparent: false,
+        };
+
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ transparent: true }), 10);
+    }
 
     render() {
         var color = document.body.style.backgroundColor = "white";
 
         return (
             <div>
+            <div id="fadeIn" className={`fade ${this.state.transparent ? 'transparent' : ''}`}>
+                {/* transparent background div */}
+            </div>
             <div className="stephanieBackground">
                 <div className="typedSteph">
                     <Typed className="typedRoomSteph" strings={["this is my room.","what's my mom doing here?","she must be going through my old stuff", "look! it's my treasure chest under my bed.","I have stuff inside I wish my mom could see","it would help her understand some things", "maybe I can help her look around my room for the code to unlock my chest"]}
