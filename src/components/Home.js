@@ -71,7 +71,7 @@ class Home extends React.Component {
             
                 { this.state.momTalk==true && this.state.momLin==1 &&
                 <div className="typedMom">
-                    <Typed className="typedFuneralMom" strings={["Stephanie meant everything to me."," After her father died she was all I had"," I wanted to protect her more than anything.", " I remember when she was young,", "all she wanted to do was become a rock climber.","I told her no, that it was too dangerous."," I wish I would have let her and not been so concerned.", " I regret not letting her make her own choices,"," I just fell I held her back from the things she wanted to do most."]}
+                    <Typed className="typedFuneralMom" strings={["Stephanie meant everything to me."," After her father died she was all I had"," I wanted to protect her more than anything.", " I remember when she was young,", "all she wanted to do was become a rock climber.","I told her no, that it was too dangerous."," I wish I would have let her and not been so concerned.", " I regret not letting her make her own choices,"," I just feel I held her back from the things she wanted to do most."]}
                            fadeOut={true}
                            typeSpeed={35} onComplete={() => {
                         setTimeout(function () {
